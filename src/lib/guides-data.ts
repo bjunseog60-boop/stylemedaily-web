@@ -40,10 +40,10 @@ export const guides: StyleGuide[] = [
     tag: 'Pillar Guide',
     emoji: '👔',
     affiliateProducts: [
-      { name: 'Tailored Blazer', brand: 'Nordstrom', price: '$89', url: 'https://nordstrom.com', tag: 'Editor Pick' },
-      { name: 'High-Rise Wide Leg Pants', brand: 'ASOS', price: '$45', url: 'https://asos.com' },
-      { name: 'Silk Camisole', brand: 'H&M', price: '$29', url: 'https://hm.com' },
-      { name: 'Classic Pumps', brand: 'Zappos', price: '$65', url: 'https://zappos.com' },
+      { name: 'Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick' },
+      { name: 'High-Rise Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S' },
+      { name: 'Silk Camisole', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB' },
+      { name: 'Classic Pumps', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW' },
     ],
   },
   {
@@ -56,9 +56,9 @@ export const guides: StyleGuide[] = [
     tag: 'Trending',
     emoji: '👗',
     affiliateProducts: [
-      { name: 'Oversized Linen Shirt', brand: 'H&M', price: '$35', url: 'https://hm.com', tag: 'Best Value' },
-      { name: 'Straight Leg Jeans', brand: 'ASOS', price: '$48', url: 'https://asos.com' },
-      { name: 'White Sneakers', brand: 'Zappos', price: '$55', url: 'https://zappos.com' },
+      { name: 'Oversized Linen Shirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/4rVjOFg', tag: 'Best Value' },
+      { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ' },
+      { name: 'White Sneakers', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj' },
     ],
   },
   {
@@ -71,9 +71,9 @@ export const guides: StyleGuide[] = [
     tag: 'Popular',
     emoji: '💃',
     affiliateProducts: [
-      { name: 'Satin Midi Dress', brand: 'REVOLVE', price: '$120', url: 'https://revolve.com', tag: 'Date Night Fave' },
-      { name: 'Strappy Heels', brand: 'Nordstrom', price: '$75', url: 'https://nordstrom.com' },
-      { name: 'Statement Earrings', brand: 'ShopBop', price: '$42', url: 'https://shopbop.com' },
+      { name: 'Satin Midi Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9', tag: 'Date Night Fave' },
+      { name: 'Strappy Heels', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW' },
+      { name: 'Statement Earrings', brand: 'Amazon', price: '$15', url: 'https://amzn.to/3Mro3JB' },
     ],
   },
   {
@@ -86,9 +86,9 @@ export const guides: StyleGuide[] = [
     tag: 'Evergreen',
     emoji: '💖',
     affiliateProducts: [
-      { name: 'Wrap Dress (Hourglass)', brand: 'Nordstrom', price: '$68', url: 'https://nordstrom.com' },
-      { name: 'A-Line Skirt (Pear)', brand: 'H&M', price: '$32', url: 'https://hm.com' },
-      { name: 'Structured Blazer (Rectangle)', brand: 'ASOS', price: '$72', url: 'https://asos.com' },
+      { name: 'Wrap Dress (Hourglass)', brand: 'Amazon', price: '$36', url: 'https://amzn.to/4tH7kT9' },
+      { name: 'A-Line Skirt (Pear)', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3ZCaw4S' },
+      { name: 'Structured Blazer (Rectangle)', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg' },
     ],
   },
   {
@@ -100,6 +100,10 @@ export const guides: StyleGuide[] = [
     date: '2026-02-08',
     tag: 'Comparison',
     emoji: '🛍️',
+    affiliateProducts: [
+      { name: 'Work Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Top Pick' },
+      { name: 'Work Tote Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT' },
+    ],
   },
   {
     slug: 'what-to-wear-to-wedding-2026',
@@ -110,6 +114,10 @@ export const guides: StyleGuide[] = [
     date: '2026-02-06',
     tag: 'Seasonal',
     emoji: '🎉',
+    affiliateProducts: [
+      { name: 'Wedding Guest Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9', tag: 'Best Seller' },
+      { name: 'Elegant Heels', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW' },
+    ],
   },
   {
     slug: 'best-jeans-for-women-2026',
@@ -121,9 +129,8 @@ export const guides: StyleGuide[] = [
     tag: 'Product Review',
     emoji: '👖',
     affiliateProducts: [
-      { name: 'Levi\'s 501 Original', brand: 'Nordstrom', price: '$98', url: 'https://nordstrom.com', tag: 'Best Overall' },
-      { name: 'AGOLDE 90s Pinch Waist', brand: 'ShopBop', price: '$198', url: 'https://shopbop.com', tag: 'Best Premium' },
-      { name: 'Abercrombie Curve Love', brand: 'Abercrombie', price: '$90', url: 'https://abercrombie.com', tag: 'Best for Curves' },
+      { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Overall' },
+      { name: 'Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Comfort' },
     ],
   },
   {
@@ -136,9 +143,9 @@ export const guides: StyleGuide[] = [
     tag: 'New',
     emoji: '🌸',
     affiliateProducts: [
-      { name: 'Linen Blazer', brand: 'Nordstrom', price: '$89', url: 'https://nordstrom.com', tag: 'Editor Pick' },
-      { name: 'Wide Leg Pants', brand: 'ASOS', price: '$52', url: 'https://asos.com' },
-      { name: 'Silk Blouse', brand: 'H&M', price: '$35', url: 'https://hm.com' },
+      { name: 'Linen Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick' },
+      { name: 'Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S' },
+      { name: 'Silk Blouse', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB' },
     ],
   },
   {
@@ -151,10 +158,10 @@ export const guides: StyleGuide[] = [
     tag: 'New',
     emoji: '💼',
     affiliateProducts: [
-      { name: 'Oversized Wool Blazer', brand: 'Nordstrom', price: '$149', url: 'https://nordstrom.com', tag: 'Editor Pick' },
-      { name: 'High-Waisted Trousers', brand: 'ASOS', price: '$58', url: 'https://asos.com', tag: 'Best Value' },
-      { name: 'Silk Button-Down Shirt', brand: 'H&M', price: '$45', url: 'https://hm.com' },
-      { name: 'Pointed Toe Pumps', brand: 'Nordstrom', price: '$120', url: 'https://nordstrom.com' },
+      { name: 'Oversized Wool Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick' },
+      { name: 'High-Waisted Trousers', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Value' },
+      { name: 'Silk Button-Down Shirt', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB' },
+      { name: 'Pointed Toe Pumps', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW' },
     ],
   },
   {
@@ -167,10 +174,10 @@ export const guides: StyleGuide[] = [
     tag: 'Trending',
     emoji: '💕',
     affiliateProducts: [
-      { name: 'Satin Midi Dress', brand: 'Nordstrom', price: '$89', url: 'https://nordstrom.com', tag: 'Editor Pick' },
-      { name: 'Strappy Heeled Sandals', brand: 'ASOS', price: '$62', url: 'https://asos.com' },
-      { name: 'Statement Earrings', brand: 'H&M', price: '$18', url: 'https://hm.com', tag: 'Budget Pick' },
-      { name: 'Clutch Bag', brand: 'Nordstrom', price: '$55', url: 'https://nordstrom.com' },
+      { name: 'Satin Midi Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9', tag: 'Editor Pick' },
+      { name: 'Strappy Heeled Sandals', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW' },
+      { name: 'Statement Earrings', brand: 'Amazon', price: '$15', url: 'https://amzn.to/3Mro3JB', tag: 'Budget Pick' },
+      { name: 'Clutch Bag', brand: 'Amazon', price: '$22', url: 'https://amzn.to/4anggFT' },
     ],
   },
   {
@@ -183,11 +190,9 @@ export const guides: StyleGuide[] = [
     tag: 'Popular',
     emoji: '👖',
     affiliateProducts: [
-      { name: 'Levi\'s Ribcage Straight', brand: 'Nordstrom', price: '$98', url: 'https://nordstrom.com', tag: 'Best Overall' },
-      { name: 'AGOLDE 90s Pinch Waist', brand: 'ShopBop', price: '$198', url: 'https://shopbop.com', tag: 'Best Premium' },
-      { name: 'Abercrombie Curve Love', brand: 'Abercrombie', price: '$90', url: 'https://abercrombie.com', tag: 'Best for Curves' },
-      { name: 'Good American Good Legs', brand: 'Nordstrom', price: '$159', url: 'https://nordstrom.com' },
-      { name: 'H&M Slim Mom Jeans', brand: 'H&M', price: '$35', url: 'https://hm.com', tag: 'Budget Pick' },
+      { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Overall' },
+      { name: 'Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best for Curves' },
+      { name: 'White Sneakers', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj', tag: 'Best Pairing' },
     ],
   },
   {
@@ -200,10 +205,10 @@ export const guides: StyleGuide[] = [
     tag: 'Hot',
     emoji: '🌷',
     affiliateProducts: [
-      { name: 'Linen Blend Blazer', brand: 'H&M', price: '$49', url: 'https://hm.com', tag: 'Trend Pick' },
-      { name: 'Pleated Midi Skirt', brand: 'ASOS', price: '$45', url: 'https://asos.com' },
-      { name: 'Woven Tote Bag', brand: 'Nordstrom', price: '$78', url: 'https://nordstrom.com', tag: 'Must Have' },
-      { name: 'Platform Sandals', brand: 'ASOS', price: '$55', url: 'https://asos.com' },
+      { name: 'Linen Blend Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Trend Pick' },
+      { name: 'Satin Midi Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9' },
+      { name: 'Woven Tote Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT', tag: 'Must Have' },
+      { name: 'White Sneakers', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj' },
     ],
   },
   {
@@ -216,9 +221,8 @@ export const guides: StyleGuide[] = [
     tag: 'Product Review',
     emoji: '👜',
     affiliateProducts: [
-      { name: 'Madewell Transport Tote', brand: 'Nordstrom', price: '$98', url: 'https://nordstrom.com', tag: 'Best Overall' },
-      { name: 'ASOS Structured Laptop Bag', brand: 'ASOS', price: '$52', url: 'https://asos.com', tag: 'Best Value' },
-      { name: 'H&M Faux Leather Tote', brand: 'H&M', price: '$35', url: 'https://hm.com', tag: 'Budget Pick' },
+      { name: 'Professional Tote Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT', tag: 'Best Overall' },
+      { name: 'Structured Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Style It With' },
     ],
   },
   {
@@ -231,9 +235,9 @@ export const guides: StyleGuide[] = [
     tag: 'Budget',
     emoji: '💰',
     affiliateProducts: [
-      { name: 'Quince Cashmere Sweater', brand: 'Quince', price: '$50', url: 'https://quince.com', tag: 'Best Quality' },
-      { name: 'Uniqlo Heattech Top', brand: 'Uniqlo', price: '$15', url: 'https://uniqlo.com' },
-      { name: 'H&M Premium Collection Blazer', brand: 'H&M', price: '$65', url: 'https://hm.com', tag: 'Editor Pick' },
+      { name: 'Silk Camisole', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB', tag: 'Best Quality' },
+      { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ' },
+      { name: 'Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick' },
     ],
   },
   {
@@ -246,9 +250,9 @@ export const guides: StyleGuide[] = [
     tag: 'Guide',
     emoji: '🪄',
     affiliateProducts: [
-      { name: 'Classic White T-Shirt 3-Pack', brand: 'H&M', price: '$25', url: 'https://hm.com', tag: 'Wardrobe Essential' },
-      { name: 'Cashmere Crewneck', brand: 'Nordstrom', price: '$89', url: 'https://nordstrom.com', tag: 'Worth the Splurge' },
-      { name: 'Versatile Wrap Dress', brand: 'ASOS', price: '$48', url: 'https://asos.com' },
+      { name: 'Classic White Camisole', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB', tag: 'Wardrobe Essential' },
+      { name: 'Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Worth the Splurge' },
+      { name: 'Versatile Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S' },
     ],
   },
   {
@@ -261,10 +265,8 @@ export const guides: StyleGuide[] = [
     tag: 'Product Review',
     emoji: '👟',
     affiliateProducts: [
-      { name: 'Nike Air Force 1', brand: 'Nordstrom', price: '$115', url: 'https://nordstrom.com', tag: 'Best Classic' },
-      { name: 'Veja Campo', brand: 'ShopBop', price: '$165', url: 'https://shopbop.com', tag: 'Best Sustainable' },
-      { name: 'Adidas Stan Smith', brand: 'Zappos', price: '$95', url: 'https://zappos.com', tag: 'Best Value' },
-      { name: 'New Balance 550', brand: 'Nordstrom', price: '$110', url: 'https://nordstrom.com' },
+      { name: 'White Sneakers', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj', tag: 'Best Overall' },
+      { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Pairing' },
     ],
   },
   {
@@ -277,10 +279,10 @@ export const guides: StyleGuide[] = [
     tag: 'Comprehensive',
     emoji: '👩‍💼',
     affiliateProducts: [
-      { name: 'Theory Tailored Blazer', brand: 'Nordstrom', price: '$395', url: 'https://nordstrom.com', tag: 'Investment Piece' },
-      { name: 'ASOS Cigarette Pants', brand: 'ASOS', price: '$42', url: 'https://asos.com', tag: 'Best Value' },
-      { name: 'Everlane Silk Blouse', brand: 'Everlane', price: '$88', url: 'https://everlane.com' },
-      { name: 'Sam Edelman Pumps', brand: 'Zappos', price: '$130', url: 'https://zappos.com' },
+      { name: 'Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Investment Piece' },
+      { name: 'Wide Leg Trousers', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Value' },
+      { name: 'Silk Blouse', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB' },
+      { name: 'Pointed Toe Pumps', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW' },
     ],
   },
   {
@@ -292,6 +294,10 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Comparison',
     emoji: '🤔',
+    affiliateProducts: [
+      { name: 'Build Your Own Style Kit', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'DIY Pick' },
+      { name: 'Work Tote Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT' },
+    ],
   },
   {
     slug: 'best-affordable-blazers-under-100',
@@ -303,10 +309,9 @@ export const guides: StyleGuide[] = [
     tag: 'Product Review',
     emoji: '🧥',
     affiliateProducts: [
-      { name: 'H&M Double-Breasted Blazer', brand: 'H&M', price: '$55', url: 'https://hm.com', tag: 'Best Under $60' },
-      { name: 'ASOS Oversized Blazer', brand: 'ASOS', price: '$72', url: 'https://asos.com', tag: 'Best Oversized' },
-      { name: 'Nordstrom Rack Wool Blend', brand: 'Nordstrom', price: '$89', url: 'https://nordstrom.com', tag: 'Best Quality' },
-      { name: 'Zara Cropped Blazer', brand: 'Zara', price: '$69', url: 'https://zara.com' },
+      { name: 'Classic Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall' },
+      { name: 'Wide Leg Pants (Pair With)', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S' },
+      { name: 'Silk Camisole (Layer Under)', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB' },
     ],
   },
   {
@@ -319,10 +324,10 @@ export const guides: StyleGuide[] = [
     tag: 'Essential',
     emoji: '🤝',
     affiliateProducts: [
-      { name: 'Navy Tailored Blazer', brand: 'Nordstrom', price: '$95', url: 'https://nordstrom.com', tag: 'Corporate Pick' },
-      { name: 'Slim Dress Pants', brand: 'ASOS', price: '$48', url: 'https://asos.com' },
-      { name: 'Pointed Toe Flats', brand: 'Zappos', price: '$65', url: 'https://zappos.com', tag: 'Comfort Pick' },
-      { name: 'Structured Handbag', brand: 'H&M', price: '$40', url: 'https://hm.com' },
+      { name: 'Navy Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Corporate Pick' },
+      { name: 'Slim Dress Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S' },
+      { name: 'Pointed Toe Pumps', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW', tag: 'Comfort Pick' },
+      { name: 'Structured Handbag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT' },
     ],
   },
 ];
