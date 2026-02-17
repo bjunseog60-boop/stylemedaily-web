@@ -1,10 +1,29 @@
 import Link from 'next/link';
 import { guides } from '@/lib/guides-data';
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 import GuideCard from '@/components/GuideCard';
 import NewsletterCTA from '@/components/NewsletterCTA';
 
 export default function HomePage() {
   const featured = guides.slice(0, 6);
+
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    sameAs: [
+      'https://www.pinterest.com/yss007895/',
+      'https://instagram.com/stylemedaily',
+      'https://twitter.com/stylemedaily',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'hello@stylemedaily.com',
+      contactType: 'customer service',
+    },
+  };
 
   const pinterestPins = [
     { title: 'Capsule Wardrobe Guide 2026', image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=400&h=600&fit=crop', url: '/guides/capsule-wardrobe-working-women-2026', color: 'from-purple-500 to-violet-500' },
@@ -18,6 +37,11 @@ export default function HomePage() {
   ];
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
     <div>
       {/* Hero */}
       <section className="relative pt-12 pb-16 overflow-hidden">
@@ -156,5 +180,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
