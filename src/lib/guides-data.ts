@@ -330,6 +330,40 @@ export const guides: StyleGuide[] = [
       { name: 'Structured Handbag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT' },
     ],
   },
+  {
+    slug: 'spring-2026-must-have-items',
+    title: '10 Must-Have Fashion Items for Spring 2026: Runway to Real Life',
+    category: 'seasonal',
+    description: 'From leather jackets to vanilla yellow tops — the 10 hottest spring 2026 trend items straight from the runway, all shoppable on Amazon.',
+    readTime: '14 min',
+    date: '2026-02-18',
+    tag: 'Hot',
+    emoji: '🔥',
+    affiliateProducts: [
+      { name: 'Leather Jacket', brand: 'Amazon', price: '$59', url: 'https://amzn.to/4az8Vlh', tag: '#1 Must Have' },
+      { name: 'Cigarette Jeans', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4kJhrTx', tag: 'Trending' },
+      { name: 'Large Tote Bag', brand: 'Amazon', price: '$36', url: 'https://amzn.to/4qBF7dJ' },
+      { name: 'Oversized Trench Coat', brand: 'Amazon', price: '$68', url: 'https://amzn.to/4kNVNxy', tag: 'Investment Piece' },
+      { name: 'Vanilla Yellow Blouse', brand: 'Amazon', price: '$28', url: 'https://amzn.to/4rUPDhk', tag: 'IT Color 2026' },
+    ],
+  },
+  {
+    slug: 'trending-spring-accessories-2026',
+    title: 'Spring 2026 Accessories: Bags, Shoes & Jewelry Trends',
+    category: 'seasonal',
+    description: 'Complete your spring look with these trending accessories — from oversized sunglasses to almond toe heels, all under $70.',
+    readTime: '12 min',
+    date: '2026-02-18',
+    tag: 'Trending',
+    emoji: '👛',
+    affiliateProducts: [
+      { name: 'Lace Midi Skirt', brand: 'Amazon', price: '$32', url: 'https://amzn.to/3OrVpsf', tag: 'Romantic Trend' },
+      { name: 'Quarter Zip Knit', brand: 'Amazon', price: '$35', url: 'https://amzn.to/40drBCf', tag: 'Runway Pick' },
+      { name: 'Floral Midi Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4rfX7eQ', tag: 'Spring Essential' },
+      { name: 'Oversized Sunglasses', brand: 'Amazon', price: '$18', url: 'https://amzn.to/4tEIRhl', tag: 'Statement Piece' },
+      { name: 'Almond Toe Heels', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4tEJV4X', tag: 'Elegant Pick' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
