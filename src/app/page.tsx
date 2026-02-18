@@ -91,7 +91,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div>
-        {/* Hero — Clean editorial style */}
+        {/* Hero â Clean editorial style */}
         <section className="pt-16 pb-20">
           <p className="text-sm text-gray-400 font-mono tracking-wide uppercase mb-4">
             Your Daily Style Edit
@@ -119,7 +119,7 @@ export default function HomePage() {
         {/* Trending Products */}
         <TrendingProducts />
 
-        {/* Editor's Picks — Top 3 guides */}
+        {/* Editor's Picks â Top 3 guides */}
         <section className="mb-20">
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -144,12 +144,12 @@ export default function HomePage() {
           <NewsletterCTA />
         </section>
 
-        {/* Pinterest Gallery — 4 pins */}
+        {/* Pinterest Gallery â 4 pins */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h2 className="section-title">Trending on Pinterest</h2>
-              <p className="text-sm text-gray-400 mt-1">Our most saved style guides</p>
+              <h2 className="section-title">Trending Styles</h2>
+              <p className="text-sm text-gray-400 mt-1">Our most popular style guides this week</p>
             </div>
             <a href="https://www.pinterest.com/yss007895/" target="_blank" rel="noopener noreferrer"
               className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">
