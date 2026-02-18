@@ -203,7 +203,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
                 {/* In-Article AdSense after second section */}
                 {idx === 1 && (
-                  <AdUnit slot="7259870550" format="fluid" layout="in-article" />
+                  <AdUnit slot="7545186477" format="fluid" layout="in-article" />
                 )}
 
                 {/* Mid-Article CTA after third section — pair */}
@@ -213,7 +213,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
                 {/* Rectangle ad after 4th section */}
                 {idx === 3 && (
-                  <AdUnit slot="7259870550" format="rectangle" style={{ minHeight: 280 }} />
+                  <AdUnit slot="6237750336" format="rectangle" style={{ minHeight: 280 }} />
                 )}
               </div>
             ))
@@ -327,7 +327,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         <NewsletterCTA />
 
         {/* Bottom AdSense Banner */}
-        <AdUnit slot="7259870550" format="horizontal" className="mt-8" />
+        <AdUnit slot="8863913673" format="horizontal" className="mt-8" />
 
         <p className="text-xs text-gray-400 text-center mt-8">
           Last updated: {guide.date} · Affiliate disclosure: Some links may earn us a commission at no extra cost to you.

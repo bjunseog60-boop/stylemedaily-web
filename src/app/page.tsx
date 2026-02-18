@@ -114,7 +114,7 @@ export default function HomePage() {
         </section>
 
         {/* Ad banner between hero and products */}
-        <AdUnit slot="7259870550" format="horizontal" className="mb-4" />
+        <AdUnit slot="8863913673" format="horizontal" className="mb-4" />
 
         {/* Trending Products */}
         <TrendingProducts />
@@ -134,7 +134,7 @@ export default function HomePage() {
         </section>
 
         {/* Ad banner between guides and shop */}
-        <AdUnit slot="7259870550" format="horizontal" className="mb-4" />
+        <AdUnit slot="8863913673" format="horizontal" className="mb-4" />
 
         {/* Shop by Category */}
         <ShopByCategory />
