@@ -6,6 +6,7 @@ import GuideCard from '@/components/GuideCard';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import TrendingProducts from '@/components/TrendingProducts';
 import ShopByCategory from '@/components/ShopByCategory';
+import AdUnit from '@/components/AdUnit';
 
 export default function HomePage() {
   const editorPicks = guides.slice(0, 3);
@@ -112,6 +113,9 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Ad banner between hero and products */}
+        <AdUnit slot="7259870550" format="horizontal" className="mb-4" />
+
         {/* Trending Products */}
         <TrendingProducts />
 
@@ -128,6 +132,9 @@ export default function HomePage() {
             {editorPicks.map(g => <GuideCard key={g.slug} guide={g} />)}
           </div>
         </section>
+
+        {/* Ad banner between guides and shop */}
+        <AdUnit slot="7259870550" format="horizontal" className="mb-4" />
 
         {/* Shop by Category */}
         <ShopByCategory />
