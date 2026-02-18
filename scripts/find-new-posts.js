@@ -1,35 +1,22 @@
-const fs = require('fs');
-const path = require('path');
 const { execSync } = require('child_process');
+const fs = require('fs');
 
-const SITE_URL = 'https://yss007895-code.github.io/stylemedaily-web';
+// Get changed files
+const changed = execSync('git diff --name-only HEAD~1 HEAD').toString().trim();
+const files = changed.split('\n').filter(f => f.includes('guides-content'));
 
-function getNewPosts() {
-  try {
-    // git diff로 새로 추가된 slug 찾기
-    const diff = execSync('git diff HEAD~1 HEAD -- src/lib/guides-data.ts', { encoding: 'utf8' });
-    const addedSlugs = [];
-    const lines = diff.split('\n');
-    for (const line of lines) {
-      if (line.startsWith('+') && !line.startsWith('+++')) {
-        const match = line.match(/slug:\s*['"]([^'"]+)['"]/);
-        if (match) addedSlugs.push(match[1]);
-      }
-    }
-    return addedSlugs;
-  } catch (e) {
-    console.log('No previous commit or error:', e.message);
-    return [];
+const newSlugs = [];
+
+for (const file of files) {
+  if (!fs.existsSync(file)) continue;
+  const content = fs.readFileSync(file, 'utf8');
+  const slugMatches = content.match(/slug:\s*['"]([^'"]+)['"]/g) || [];
+  for (const match of slugMatches) {
+    const slug = match.replace(/slug:\s*['"]/, '').replace(/['"]/, '');
+    newSlugs.push('https://yss007895-code.github.io/stylemedaily-web/blog/' + slug);
   }
 }
 
-const newPosts = getNewPosts();
-console.log('New posts found:', newPosts);
-
-if (newPosts.length > 0) {
-  const urls = newPosts.map(slug => `${SITE_URL}/blog/${slug}`);
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `has_new_posts=true\n`);
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `new_posts=${JSON.stringify(urls)}\n`);
-} else {
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `has_new_posts=false\n`);
-}
+console.log('Found slugs:', newSlugs);
+const core = { setOutput: (k,v) => process.stdout.write('::set-output name=' + k + '::' + v + '\n') };
+core.setOutput('new_posts', newSlugs.join(','));
