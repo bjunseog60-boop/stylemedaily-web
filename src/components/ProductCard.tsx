@@ -9,14 +9,13 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, size = 'md', showFrom = false }: ProductCardProps) {
   const p = product;
-  const originalPrice = `$${(parseFloat(p.price.replace('$', '')) * 1.3).toFixed(0)}`;
   const imageHeight = size === 'sm' ? 'h-28' : size === 'lg' ? 'h-48' : 'h-36';
 
   return (
     <a
       href={p.url}
       target="_blank"
-      rel="noopener noreferrer nofollow"
+      rel="noopener noreferrer nofollow sponsored"
       className="product-card group block"
     >
       {p.image ? (
@@ -46,7 +45,6 @@ export default function ProductCard({ product, size = 'md', showFrom = false }: 
         </h4>
         <div className="flex items-center gap-2 mt-1.5">
           <span className="price-current text-sm">{p.price}</span>
-          <span className="price-original">{originalPrice}</span>
         </div>
         {showFrom && p.fromGuide && (
           <p className="text-[11px] text-gray-400 mt-1.5 line-clamp-1">

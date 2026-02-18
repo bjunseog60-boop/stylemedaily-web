@@ -39,7 +39,10 @@ export default function NewsletterCTA() {
             <input type="hidden" name="b_db90d7adcb0b1095c2da145c5_f782ed54bf" value="" />
             <button type="submit" className="btn-primary text-sm !px-5 !py-2.5 whitespace-nowrap">Subscribe</button>
           </form>
-          <p className="text-[11px] text-gray-400 mt-3">No spam. Unsubscribe anytime.</p>
+          <p className="text-[11px] text-gray-400 mt-3">
+            No spam. Unsubscribe anytime. See our{' '}
+            <a href="/privacy" className="underline hover:text-gray-600 transition-colors">Privacy Policy</a>.
+          </p>
         </>
       )}
     </div>

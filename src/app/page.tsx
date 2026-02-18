@@ -23,6 +23,7 @@ export default function HomePage() {
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
+    logo: `${SITE_URL}/logo.png`,
     sameAs: [
       'https://www.pinterest.com/yss007895/',
       'https://instagram.com/stylemedaily',
@@ -35,11 +36,58 @@ export default function HomePage() {
     },
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    ],
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is StyleMeDaily?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'StyleMeDaily is a personal styling platform that provides expert fashion guides, curated outfit ideas, and product recommendations for every woman, every occasion, and every budget.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I find the right outfit for my body type?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Take our free Style Quiz to discover your personal style profile, or browse our Body Shape Guide for tailored outfit recommendations based on your unique proportions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Are the product recommendations affordable?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! We curate products across all price ranges, from budget-friendly finds under $30 to investment pieces. Each guide includes options for every budget.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div>
         {/* Hero — Clean editorial style */}

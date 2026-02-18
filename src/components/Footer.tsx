@@ -35,14 +35,26 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-gray-900 text-sm mb-3">Company</h4>
             <div className="space-y-2">
               <Link href="/about" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">About</Link>
+              <Link href="/contact" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Contact</Link>
               <Link href="/privacy" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Privacy Policy</Link>
-              <a href="mailto:yss007895@gmail.com" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Contact</a>
             </div>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+        {/* Affiliate Disclosure */}
+        <div className="mt-8 p-4 bg-gray-50 rounded-xl border border-gray-100">
+          <p className="text-xs text-gray-500 leading-relaxed">
+            <span className="font-semibold">Affiliate Disclosure:</span> StyleMeDaily is a participant in the Amazon Services LLC Associates Program and other affiliate programs. Some links on this site are affiliate links, meaning we may earn a small commission at no extra cost to you when you make a purchase through our links.
+          </p>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} StyleMeDaily. All rights reserved.</p>
-          <p className="text-xs text-gray-400">Some links are affiliate links. We may earn a commission at no extra cost to you.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">Privacy</Link>
+            <span className="text-gray-200">|</span>
+            <Link href="/about" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">About</Link>
+          </div>
         </div>
       </div>
     </footer>
