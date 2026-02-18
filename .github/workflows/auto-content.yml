@@ -1,0 +1,41 @@
+name: Auto Content Agent
+
+on:
+  schedule:
+    # Every Tuesday and Friday at 9:00 AM UTC (화, 금 오전 9시)
+    - cron: '0 9 * * 2,5'
+  workflow_dispatch:   # 수동 실행도 가능
+    inputs:
+      reason:
+        description: 'Why are you triggering this manually?'
+        default: 'Manual trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-guide:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate new guide
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_guide.py
+
+      - name: Log success
+        run: echo "✅ New guide generated and pushed. Deploy workflow will trigger automatically."
