@@ -1,0 +1,38 @@
+name: Auto Grow Site
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # 매주 월요일 UTC 00:00 (한국 09:00)
+  workflow_dispatch:
+
+jobs:
+  update-trends:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install googleapis
+
+      - name: Fetch Google Trends
+        id: trends
+        run: node scripts/update-trends.js
+
+      - name: Run SEO Analysis
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+        run: node scripts/optimize-seo.js
+
+      - name: Commit trend data if updated
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/data/trends-data.json || true
+          git diff --staged --quiet || git commit -m "chore: auto-update trend data [skip ci]"
+          git push || true
