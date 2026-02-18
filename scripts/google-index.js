@@ -1,35 +1,23 @@
 const { google } = require('googleapis');
 
-async function indexUrls(urls) {
-  const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
-  
+async function main() {
+  const keyJson = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
   const auth = new google.auth.GoogleAuth({
-    credentials,
-    scopes: ['https://www.googleapis.com/auth/indexing']
+    credentials: keyJson,
+    scopes: ['https://www.googleapis.com/auth/indexing'],
   });
 
-  const indexing = google.indexing({ version: 'v3', auth });
-  
+  const client = await auth.getClient();
+  const urls = (process.env.NEW_POSTS || '').split(',').filter(Boolean);
+
   for (const url of urls) {
-    try {
-      const res = await indexing.urlNotifications.publish({
-        requestBody: {
-          url: url,
-          type: 'URL_UPDATED'
-        }
-      });
-      console.log('Indexed:', url, res.data);
-    } catch (err) {
-      console.error('Failed to index:', url, err.message);
-    }
-    // Rate limit 방지
-    await new Promise(r => setTimeout(r, 200));
+    const res = await client.request({
+      url: 'https://indexing.googleapis.com/v3/urlNotifications:publish',
+      method: 'POST',
+      data: { url, type: 'URL_UPDATED' },
+    });
+    console.log('Indexed:', url, res.status);
   }
 }
 
-const newPosts = JSON.parse(process.env.NEW_POSTS || '[]');
-console.log('Indexing', newPosts.length, 'URLs:', newPosts);
-
-indexUrls(newPosts)
-  .then(() => console.log('Done!'))
-  .catch(console.error);
+main().catch(console.error);
