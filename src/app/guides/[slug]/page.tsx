@@ -98,11 +98,6 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
             availability: 'https://schema.org/InStock',
             url: p.url,
           },
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: (4.5 + (i % 4) * 0.1).toFixed(1),
-            reviewCount: 120 + i * 47,
-          },
         }) }} />
       ))}
       {/* FAQ schema for search snippets */}

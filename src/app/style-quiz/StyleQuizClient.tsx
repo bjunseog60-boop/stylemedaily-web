@@ -81,34 +81,28 @@ const styleProfiles: Record<string, StyleResult> = {
 };
 
 function computeResult(answers: number[]): StyleResult {
-  // Score each profile based on answer patterns
   const scores = { classic: 0, trendy: 0, casual: 0, streetwear: 0 };
 
-  // Q1: Daily life
   if (answers[0] === 0) { scores.classic += 3; scores.trendy += 1; }
   if (answers[0] === 1) { scores.trendy += 3; scores.streetwear += 1; }
   if (answers[0] === 2) { scores.casual += 3; scores.streetwear += 1; }
   if (answers[0] === 3) { scores.trendy += 2; scores.casual += 2; }
 
-  // Q2: Weekend outfit
   if (answers[1] === 0) { scores.casual += 3; scores.classic += 1; }
   if (answers[1] === 1) { scores.trendy += 2; scores.classic += 2; }
   if (answers[1] === 2) { scores.casual += 3; scores.streetwear += 1; }
   if (answers[1] === 3) { scores.trendy += 3; scores.streetwear += 1; }
 
-  // Q3: Style icon
   if (answers[2] === 0) { scores.classic += 4; }
   if (answers[2] === 1) { scores.trendy += 4; }
   if (answers[2] === 2) { scores.casual += 4; }
   if (answers[2] === 3) { scores.streetwear += 4; }
 
-  // Q4: Budget
   if (answers[3] === 0) { scores.streetwear += 2; scores.casual += 2; }
   if (answers[3] === 1) { scores.casual += 2; scores.classic += 1; }
   if (answers[3] === 2) { scores.classic += 2; scores.trendy += 1; }
   if (answers[3] === 3) { scores.classic += 2; scores.trendy += 2; }
 
-  // Q5: Priority
   if (answers[4] === 0) { scores.classic += 3; scores.streetwear += 1; }
   if (answers[4] === 1) { scores.trendy += 3; scores.casual += 1; }
   if (answers[4] === 2) { scores.casual += 3; scores.streetwear += 1; }
@@ -136,6 +130,14 @@ export default function StyleQuizClient() {
     }
   };
 
+  const handleRetake = () => {
+    setStep(0);
+    setAnswers([]);
+    setResult(null);
+    setDone(false);
+    setEmail('');
+  };
+
   return (
     <div className="pt-8 max-w-2xl mx-auto">
       <div className="text-center mb-8">
@@ -149,8 +151,9 @@ export default function StyleQuizClient() {
         <div className="animate-fade-in">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs text-gray-400 font-mono">{step + 1} / {questions.length}</span>
+            <span className="text-xs text-gray-400">{Math.round(((step + 1) / questions.length) * 100)}% complete</span>
           </div>
-          <div className="h-1 bg-gray-100 rounded-full mb-8 overflow-hidden">
+          <div className="h-1 bg-gray-100 rounded-full mb-8 overflow-hidden" role="progressbar" aria-valuenow={step + 1} aria-valuemin={0} aria-valuemax={questions.length}>
             <div className="h-full bg-gray-900 rounded-full transition-all duration-500" style={{ width: `${((step + 1) / questions.length) * 100}%` }} />
           </div>
 
@@ -177,7 +180,7 @@ export default function StyleQuizClient() {
             <h3 className="font-display font-bold text-sm text-gray-900 mb-3">Your Starter Kit</h3>
             <div className="grid grid-cols-2 gap-2">
               {result.products.map((p, i) => (
-                <a key={i} href={p.url} target="_blank" rel="noopener noreferrer nofollow"
+                <a key={i} href={p.url} target="_blank" rel="noopener noreferrer nofollow sponsored"
                   className="flex items-center gap-3 p-3 rounded-lg border border-gray-100 hover:border-gray-200 hover:bg-gray-50 transition-all">
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-gray-800 truncate">{p.name}</p>
@@ -208,12 +211,27 @@ export default function StyleQuizClient() {
               className="flex-1 bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-gray-400" />
             <button onClick={() => setDone(true)} className="btn-primary text-sm !px-5">Get Results</button>
           </div>
+
+          <button
+            onClick={handleRetake}
+            className="mt-4 text-sm text-gray-400 hover:text-gray-600 font-medium transition-colors"
+          >
+            Retake Quiz
+          </button>
         </div>
       ) : result ? (
         <div className="card p-8 text-center animate-fade-in">
           <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">Check Your Inbox</h2>
           <p className="text-gray-400 mb-4">Your personalized style profile is on its way.</p>
-          <Link href="/guides" className="btn-primary inline-block">Browse Style Guides</Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/guides" className="btn-primary inline-block">Browse Style Guides</Link>
+            <button
+              onClick={handleRetake}
+              className="btn-secondary inline-block text-sm"
+            >
+              Retake Quiz
+            </button>
+          </div>
         </div>
       ) : null}
     </div>
