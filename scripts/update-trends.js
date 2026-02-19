@@ -21,9 +21,9 @@ function fetchTrends() {
 }
 
 function parseTrends(xml) {
-  const items = xml.match(/<title><![CDATA[([^]]+)]]></title>/g) || [];
+  const items = xml.match(/<title><!\[CDATA\[([^\]]+)\]\]><\/title>/g) || [];
   return items
-    .map(item => item.replace(/<title><![CDATA[/, '').replace(/]]></title>/, '').trim())
+    .map(item => item.replace(/<title><!\[CDATA\[/, '').replace(/\]\]><\/title>/, '').trim())
     .filter(title => FASHION_KEYWORDS.some(kw => title.toLowerCase().includes(kw)));
 }
 
