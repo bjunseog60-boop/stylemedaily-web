@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'eclectic-grandpa-style-the-ultimate-gen-z-trend-guide',
+    title: 'Eclectic Grandpa Style: The Ultimate Gen Z Trend Guide',
+    category: 'casual',
+    description: 'Master the eclectic grandpa style trend with oversized cardigans, vintage pieces, and earthy tones. A complete guide for Gen Z and Millennials.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '🎩',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'office-siren-the-seductive-workwear-trend-you-need-to-try',
     title: 'Office Siren: The Seductive Workwear Trend You Need to Try',
     category: 'workwear',
