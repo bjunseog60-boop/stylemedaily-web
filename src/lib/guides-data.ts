@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'soft-girl-aesthetic-101-your-dreamy-style-guide',
+    title: 'Soft Girl Aesthetic 101: Your Dreamy Style Guide 🎀☁️',
+    category: 'casual',
+    description: 'A complete guide to the soft girl aesthetic — key pastel pieces, 3 outfit formulas, styling tips, and budget-friendly shopping advice for a dreamy feminine wardrobe.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '🎀',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'mob-wife-aesthetic-the-bold-luxe-trend-taking-over-2024',
     title: 'Mob Wife Aesthetic: The Bold, Luxe Trend Taking Over 2024',
     category: 'seasonal',
