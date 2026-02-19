@@ -33,6 +33,24 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'coquette-aesthetic-guide-feminine-style-2026',
+    title: 'Coquette Aesthetic: The Ultimate Guide to Feminine Dressing in 2026',
+    category: 'casual',
+    description: 'Master the coquette aesthetic with bows, lace, ballet flats, and soft pastels. Your complete guide to the ultra-feminine TikTok trend with outfit ideas and affordable picks.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '🎀',
+    image: 'https://images.unsplash.com/photo-1518577915332-c2a19f149a75?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Satin Bow Hair Clips Set', brand: 'Amazon', price: '$12', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
+      { name: 'Lace Trim Camisole Top', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'Ballet Flats with Bow', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+      { name: 'Pearl Drop Earrings', brand: 'Amazon', price: '$15', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+    ],
+  },
+
+  {
     slug: 'gorpcore-for-women-your-complete-style-guide',
     title: 'Gorpcore for Women: Your Complete Style Guide',
     category: 'Fashion Trends',
@@ -1001,6 +1019,24 @@ export const guides: StyleGuide[] = [
       { name: 'Mini Shoulder Bag', brand: 'Amazon', price: '$32', url: 'https://amzn.to/4anggFT', tag: 'Best Bag', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
       { name: 'Pearl Drop Earrings', brand: 'Amazon', price: '$14', url: 'https://amzn.to/3Mro3JB', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
       { name: 'Silk Hair Scrunchies Set', brand: 'Amazon', price: '$12', url: 'https://amzn.to/4tEIRhl', tag: 'Trending', image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=200&h=200&fit=crop' },
+    ],
+  },
+  {
+    slug: 'quiet-luxury-style-guide-2026',
+    title: 'Quiet Luxury Style Guide 2026: How to Nail the Old Money Aesthetic on Any Budget',
+    category: 'casual',
+    description: 'Master the quiet luxury trend with timeless, understated pieces that look expensive without the designer price tag. Your complete guide to the old money aesthetic.',
+    readTime: '11 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '🤍',
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Cashmere-Blend Crewneck Sweater', brand: 'Amazon', price: '$45', url: 'https://amzn.to/40drBCf', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&h=200&fit=crop' },
+      { name: 'Tailored Wide-Leg Trousers', brand: 'Amazon', price: '$42', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
+      { name: 'Classic Wool-Blend Coat', brand: 'Amazon', price: '$68', url: 'https://amzn.to/4kNVNxy', tag: 'Investment Piece', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
+      { name: 'Leather Ballet Flats', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3OhrhzW', tag: 'Must Have', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+      { name: 'Minimalist Gold Jewelry Set', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3Mro3JB', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
     ],
   },
 ];
