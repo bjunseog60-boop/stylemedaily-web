@@ -1039,6 +1039,24 @@ export const guides: StyleGuide[] = [
       { name: 'Minimalist Gold Jewelry Set', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3Mro3JB', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
     ],
   },
+  {
+    slug: 'how-to-style-leather-jacket-women-2026',
+    title: 'How to Style a Leather Jacket for Women in 2026: 15+ Outfit Ideas for Every Occasion',
+    category: 'casual',
+    description: 'Learn how to style a leather jacket for women in 2026. Outfit ideas for work, dates, weekends & more. Find the best leather jackets to buy now.',
+    readTime: '11 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '🧥',
+    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'AllSaints Balfern Leather Biker Jacket', brand: 'Amazon', price: '$499', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
+      { name: 'Levi\'s Faux Leather Moto Jacket', brand: 'Amazon', price: '$89', url: 'https://amzn.to/3OhrhzW', tag: 'Budget Pick', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'Madewell Washed Leather Motorcycle Jacket', brand: 'Amazon', price: '$548', url: 'https://amzn.to/40drBCf', tag: 'Editor\'s Choice', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
+      { name: 'BLANKNYC Faux Leather Jacket', brand: 'Amazon', price: '$98', url: 'https://amzn.to/4tEIRhl', tag: 'Most Popular', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
+      { name: 'Sezane Emile Leather Jacket', brand: 'Amazon', price: '$625', url: 'https://amzn.to/4tH7kT9', tag: 'Luxury Pick', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
