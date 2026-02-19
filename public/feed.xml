@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
     <title>StyleMeDaily</title>
@@ -8,19 +8,25 @@
       <title>Dark Academia Fashion Guide</title>
       <link>https://yss007895-code.github.io/stylemedaily-web/style-guides/20260219_dark_academia_fashion_your_ultimate_style_guide_to_nailing_the_tiktok_aesthetic.html</link>
       <description>Your ultimate guide to nailing the Dark Academia aesthetic</description>
-      <enclosure url="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg" type="image/jpeg"/>
+      <enclosure url="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg" type="image/jpeg" />
     </item>
     <item>
       <title>Clean Girl Aesthetic 2026</title>
       <link>https://yss007895-code.github.io/stylemedaily-web/style-guides/20260219_clean_girl_aesthetic_2026_the_only_style_guide_you_need.html</link>
       <description>The only style guide you need for Clean Girl Aesthetic</description>
-      <enclosure url="https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg" type="image/jpeg"/>
+      <enclosure url="https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg" type="image/jpeg" />
     </item>
     <item>
       <title>Coastal Grandmother Style</title>
       <link>https://yss007895-code.github.io/stylemedaily-web/style-guides/20260219_coastal_grandmother_style_your_ultimate_guide_to_the_chicest_trend_on_tiktok.html</link>
       <description>Your ultimate guide to the chicest trend on TikTok</description>
-      <enclosure url="https://images.pexels.com/photos/1488507/pexels-photo-1488507.jpeg" type="image/jpeg"/>
+      <enclosure url="https://images.pexels.com/photos/1488507/pexels-photo-1488507.jpeg" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Indie Sleaze Revival: Your Ultimate Style Guide to Nailing the Messiest Trend on TikTok</title>
+      <link>https://yss007895-code.github.io/stylemedaily-web/style-guides/indie-sleaze-revival-your-ultimate-style-guide-to-nailing-the-messiest-trend-on-tiktok.html</link>
+      <description>Fashion style guide</description>
+      <enclosure url="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
