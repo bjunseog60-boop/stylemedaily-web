@@ -1130,6 +1130,24 @@ export const guides: StyleGuide[] = [
       { name: 'Chelsea Ankle Boots', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
     ],
   },
+  {
+    slug: 'sustainable-fashion-guide-eco-friendly-wardrobe-2026',
+    title: 'Sustainable Fashion Guide 2026: How to Build an Eco-Friendly Wardrobe You\'ll Actually Love',
+    category: 'casual',
+    description: 'Build a sustainable wardrobe in 2026 with our eco-friendly fashion guide. Shop ethical brands, reduce waste & look stylish every day.',
+    readTime: '14 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: '🌿',
+    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Everlane The ReNew Long Puffer', brand: 'Amazon', price: '$168', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
+      { name: 'Reformation Cynthia High Relaxed Jean', brand: 'Amazon', price: '$128', url: 'https://amzn.to/3OhrhzW', tag: 'Best Denim', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'Girlfriend Collective Luxe Legging', brand: 'Amazon', price: '$88', url: 'https://amzn.to/40drBCf', tag: 'Best Activewear', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
+      { name: 'Quince Organic Cotton Classic Tee', brand: 'Amazon', price: '$20', url: 'https://amzn.to/3OrVpsf', tag: 'Budget Pick', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
+      { name: 'Stella McCartney Frayme Faux-Leather Bag', brand: 'Amazon', price: '$1100', url: 'https://amzn.to/4tH7kT9', tag: 'Luxury Splurge', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
