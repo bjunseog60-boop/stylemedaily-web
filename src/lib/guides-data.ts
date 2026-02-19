@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'gorpcore-for-women-your-complete-style-guide',
+    title: 'Gorpcore for Women: Your Complete Style Guide',
+    category: 'Fashion Trends',
+    description: 'Master the gorpcore trend with our complete style guide. Learn how to wear outdoor-inspired fashion with outfit ideas perfect for Gen Z and millennial women.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'gorpcore-style-guide',
+    emoji: '🥾',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'cottagecore-spring-outfits-that-are-taking-over-tiktok',
     title: 'Cottagecore Spring Outfits That Are Taking Over TikTok',
     category: 'Spring Fashion',
