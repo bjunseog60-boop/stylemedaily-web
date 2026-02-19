@@ -1057,6 +1057,42 @@ export const guides: StyleGuide[] = [
       { name: 'Sezane Emile Leather Jacket', brand: 'Amazon', price: '$625', url: 'https://amzn.to/4tH7kT9', tag: 'Luxury Pick', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
     ],
   },
+  {
+    slug: 'dark-feminine-aesthetic-guide-2026',
+    title: 'Dark Feminine Aesthetic 2026: The Ultimate Guide to Mysterious, Powerful Style',
+    category: 'date-night',
+    description: 'Embrace the dark feminine aesthetic with sultry silhouettes, rich textures, and bold confidence. Your complete guide to the TikTok trend redefining feminine power.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Trending',
+    emoji: '🖤',
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Satin Corset Top', brand: 'Amazon', price: '$32', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
+      { name: 'High-Waist Faux Leather Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Must Have', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
+      { name: 'Velvet Blazer', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
+      { name: 'Strappy Block Heel Sandals', brand: 'Amazon', price: '$42', url: 'https://amzn.to/3OhrhzW', tag: 'Date Night', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+      { name: 'Layered Gold Chain Necklace Set', brand: 'Amazon', price: '$18', url: 'https://amzn.to/3Mro3JB', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+    ],
+  },
+  {
+    slug: 'dopamine-dressing-bold-color-outfits-2026',
+    title: 'Dopamine Dressing 2026: How Bold Colors Can Transform Your Mood and Your Style',
+    category: 'casual',
+    description: 'Discover the science behind dopamine dressing and learn how to wear bold, mood-boosting colors with confidence. Outfit ideas, color combos, and affordable picks.',
+    readTime: '11 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '\u{1F308}',
+    image: 'https://images.unsplash.com/photo-1525562723836-dca67a71d5f1?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Oversized Satin Blazer in Fuchsia', brand: 'The Drop', price: '$55', url: 'https://amzn.to/4rfVnSQ', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
+      { name: 'Wide-Leg Trousers in Cobalt Blue', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
+      { name: 'Chunky Gold Statement Earrings', brand: 'Amazon', price: '$16', url: 'https://amzn.to/3Mro3JB', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+      { name: 'Color-Block Knit Sweater', brand: 'Amazon', price: '$32', url: 'https://amzn.to/4anggFT', tag: 'Trending', image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&h=200&fit=crop' },
+      { name: 'Bright Orange Crossbody Bag', brand: 'Amazon', price: '$28', url: 'https://amzn.to/4tEIRhl', tag: 'Must Have', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
