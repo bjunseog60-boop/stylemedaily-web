@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 패션 어필리에이트 블로그. Amazon Associates + Skimlinks로 수익화.
-사이트: https://yss007895-code.github.io/stylemedaily-web/
+사이트: https://bjunseog60-boop.github.io/trendloop-usa-official/
 
 ## 에이전트 명령어
 

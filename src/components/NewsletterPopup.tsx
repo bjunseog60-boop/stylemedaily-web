@@ -46,7 +46,7 @@ export default function NewsletterPopup() {
           <strong className="block text-gray-600 mt-1">Free, every Thursday.</strong>
         </p>
         <iframe
-          src="https://yss007895.substack.com/embed"
+          src="https://trendloopusa.substack.com/embed"
           title="Newsletter signup form"
           width="100%"
           height="130"

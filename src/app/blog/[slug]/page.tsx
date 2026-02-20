@@ -163,7 +163,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <h1 className="font-display text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">{post.title}</h1>
         <p className="text-lg text-gray-400 leading-relaxed">{post.excerpt}</p>
         <div className="flex items-center gap-4 mt-4 text-sm text-gray-400">
-          <span>By StyleMeDaily Team</span>
+          <span>By TrendLoop USA Team</span>
           <span>·</span>
           <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
         </div>

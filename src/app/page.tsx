@@ -26,13 +26,13 @@ export default function HomePage() {
     description: SITE_DESCRIPTION,
     logo: `${SITE_URL}/logo.png`,
     sameAs: [
-      'https://www.pinterest.com/yss007895/',
-      'https://instagram.com/stylemedaily',
-      'https://twitter.com/stylemedaily',
+      'https://www.pinterest.com/trendloopusa/',
+      'https://instagram.com/trendloopusa',
+      'https://twitter.com/trendloopusa',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      email: 'yss007895@gmail.com',
+      email: 'contact@trendloopusa.net',
       contactType: 'customer service',
     },
   };
@@ -151,7 +151,7 @@ export default function HomePage() {
               <h2 className="section-title">Trending Styles</h2>
               <p className="text-sm text-gray-400 mt-1">Our most popular style guides this week</p>
             </div>
-            <a href="https://www.pinterest.com/yss007895/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.pinterest.com/trendloopusa/" target="_blank" rel="noopener noreferrer"
               className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">
               Follow
             </a>

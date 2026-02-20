@@ -215,7 +215,7 @@ export default function BlogPage() {
         <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Stay in the Loop</h3>
         <p className="text-gray-400 text-sm mb-6">New articles and style picks delivered every Thursday.</p>
         <iframe
-          src="https://yss007895.substack.com/embed"
+          src="https://trendloopusa.substack.com/embed"
           width="100%"
           height="130"
           style={{ border: '1px solid #EEE', background: 'white', borderRadius: '12px', maxWidth: '480px', display: 'block', margin: '0 auto' }}
