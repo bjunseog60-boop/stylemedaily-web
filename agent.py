@@ -172,20 +172,58 @@ def generate_targeted_blog(keyword):
     print(f"\nGenerating blog content for: {keyword} (Gemini)")
 
     blog_prompt = f"""
-    Target Audience: US Gen Z and Millennial women (TikTok/Instagram users).
-    Aesthetic/Trend: {keyword}
+    You are a professional fashion editor at a top-tier style magazine. Write as a real human expert, NOT as AI.
 
-    Task:
-    1. Create a high-quality blog post in HTML format.
-       - Tone: Personal, friendly, and expert stylist.
-       - Voice: Use Gen Z/Millennial slang naturally.
-       - SEO: Naturally weave in keywords like "outfit ideas," "style guide," "how to wear," and "{keyword}."
-       - Content:
-         - A catchy intro about why this trend is viral on TikTok/IG.
-         - 3-4 specific styling tips in short, skimmable paragraphs.
-         - A "Shop the Essentials" section recommending generic Amazon-style items.
-       - Style: 'StyleMeDaily' (minimalist, elegant, high-fashion). Use clean HTML with inline CSS.
-       - Be CONCISE.
+    Topic: {keyword}
+    Target Audience: US women ages 20-35 (TikTok/Instagram-savvy, trend-aware)
+
+    === CRITICAL WRITING RULES ===
+    NEVER use these AI-sounding phrases:
+    - "In this article/guide/post"
+    - "Let's dive in/into"
+    - "In today's world/In the ever-evolving"
+    - "Whether you're... or..."
+    - "Look no further"
+    - "It's worth noting"
+    - "At the end of the day"
+    - "Without further ado"
+    - "Game-changer" / "Take it to the next level"
+    - "Elevate your" (overused)
+    - Starting paragraphs with "So," or "Well,"
+
+    INSTEAD: Write like a real fashion editor. Use varied sentence lengths (mix short punchy sentences with longer ones). Start with a bold statement, a personal anecdote, or a provocative question. Sound opinionated and confident.
+
+    === HTML STRUCTURE (Required) ===
+    The blog_html must include:
+    1. <nav class="breadcrumb"> with Home > Category > Post Title
+    2. <div class="reading-time"> showing estimated reading time (e.g., "5 min read")
+    3. <div class="author-box"> with author name "StyleMeDaily Editorial Team", a short bio, and date
+    4. <nav class="toc"> Table of Contents linking to each h2 section
+    5. All <img> tags must have descriptive alt="" text and a <figcaption>
+    6. At least 2 internal links to related topics (use # placeholder hrefs)
+    7. Clean semantic HTML: article, section, h2, h3, figure, figcaption
+    8. Inline CSS using modern, clean design (system fonts, good spacing, mobile-friendly)
+
+    === SEO REQUIREMENTS ===
+    1. Include a FAQ section at the end with 3-4 real questions users would search for
+    2. Add JSON-LD FAQ schema in a <script type="application/ld+json"> block
+    3. Include <link rel="canonical"> in the output meta
+    4. Meta description must be 150-160 chars, compelling, include primary keyword
+    5. Use keyword "{keyword}" naturally 3-5 times (not stuffed)
+    6. H2 headings should contain related search terms
+
+    === E-E-A-T SIGNALS ===
+    1. Cite at least 1 real fashion source (Vogue, Harper's Bazaar, Who What Wear, etc.)
+    2. Include 1-2 specific statistics or data points (can be approximate trends data)
+    3. Add "Last Updated: {datetime.now().strftime('%B %Y')}" in the author box
+    4. Show expertise through specific product knowledge and styling details
+    5. Include a brief "Why Trust Us" line in the author box
+
+    === CONTENT REQUIREMENTS ===
+    - Opening: Start with something unexpected - a bold claim, a trend observation, or a real cultural moment. NO generic intros.
+    - Body: 3-4 styling sections with specific, actionable tips. Name real brands, fabrics, and color palettes.
+    - Products: "Shop the Look" section with 4-5 generic product recommendations (no affiliate links, just product names + why they work)
+    - Closing: End with a strong, opinionated take on where this trend is heading
 
     Return ONLY a valid JSON object (no markdown fences):
     {{
@@ -193,9 +231,10 @@ def generate_targeted_blog(keyword):
         "blog_title": "...",
         "meta": {{
             "category": "...",
-            "description": "...",
+            "description": "150-160 char SEO meta description with keyword",
             "emoji": "...",
-            "tag": "..."
+            "tag": "...",
+            "canonical_slug": "url-friendly-slug-here"
         }}
     }}
     """
