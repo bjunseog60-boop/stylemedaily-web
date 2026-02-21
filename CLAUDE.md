@@ -80,6 +80,13 @@ node scripts/agent-generate.js --full
 - 브랜드명, 원단, 컬러팔레트 구체적으로 언급
 - 트렌드의 문화적 맥락 설명
 
+## 배포 전 필수 검증 (이거 안 하면 push 금지)
+1. 이미지 검증: git push 전에 모든 img src 파일 존재 확인. 외부 URL이면 curl -I로 200 확인. 실패 시 push 차단.
+2. 링크 검증: 내부/외부 링크 200 응답 확인. 404면 push 차단.
+3. HTML 검증: 빈 src, 빈 href, alt 누락 확인.
+4. 배포 후 검증: push 후 30초 대기 -> 실제 URL curl 확인 -> 이미지 깨지면 롤백.
+5. 절대 규칙: 외부 URL(Unsplash 등) 사용 금지. 모든 이미지는 로컬 /images/ 에만. "코드상 문제 없다" 답변 금지. 실제 URL 확인 결과만 보고.
+
 ## 필수 규칙
 - 파일 수정 후 반드시 git add, git commit, git push까지 완료할 것
 - push 없이 작업 완료 보고 금지
