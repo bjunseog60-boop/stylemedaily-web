@@ -1,10 +1,10 @@
-name: Auto Content Agent
+name: Auto Content Agent (Gemini)
 
 on:
   schedule:
-    # Every Tuesday and Friday at 9:00 AM UTC (화, 금 오전 9시)
+    # Every Tuesday and Friday at 9:00 AM UTC
     - cron: '0 9 * * 2,5'
-  workflow_dispatch:   # 수동 실행도 가능
+  workflow_dispatch:
     inputs:
       reason:
         description: 'Why are you triggering this manually?'
@@ -30,12 +30,12 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install anthropic
+        run: pip install google-genai
 
       - name: Generate new guide
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/generate_guide.py
 
       - name: Log success
-        run: echo "✅ New guide generated and pushed. Deploy workflow will trigger automatically."
+        run: echo "New guide generated via Gemini. Deploy workflow will trigger automatically."
