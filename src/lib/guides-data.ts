@@ -1233,6 +1233,23 @@ export const guides: StyleGuide[] = [
       { name: 'Cashmere Wrap Shawl', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4rfVnSQ', tag: 'Luxe Touch', image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&h=200&fit=crop' },
     ],
   },
+  {
+    slug: 'trench-coat-outfits-styling-guide-2026',
+    title: 'Trench Coat Outfits 2026: Your Ultimate Guide to Styling This Classic Staple',
+    category: 'seasonal',
+    description: 'Unlock the power of your trench coat! From casual chic to office glam, this guide shows you how to style the ultimate classic. Get easy outfit ideas for every occasion in 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: '🧥',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Classic Tan Trench Coat', brand: 'Amazon', price: '$129', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
+      { name: 'Waterproof Chelsea Boots', brand: 'Amazon', price: '$85', url: 'https://amzn.to/40drBCf', tag: 'Footwear Pick', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
+      { name: 'Striped Breton Tee', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3OrVpsf', tag: 'Staple Item', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'Structured Crossbody Bag', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3Mro7cj', tag: 'Accessory Must-Have', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
