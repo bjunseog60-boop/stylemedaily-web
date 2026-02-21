@@ -57,18 +57,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             },
           }) }}
         />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WSQ75SKGBL"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-WSQ75SKGBL');
-          `}
-        </Script>
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            strategy="afterInteractive"
+          />
+        )}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+            `}
+          </Script>
+        )}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8049649445649586"
