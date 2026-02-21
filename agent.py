@@ -1,4 +1,3 @@
-import anthropic
 from google import genai
 import os
 import json
@@ -15,16 +14,10 @@ from datetime import datetime
 # Load environment variables
 load_dotenv(dotenv_path=r"C:\Users\yss00\.env")
 
-# Configuration
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# Initialize Clients (Vertex AI - fashion-money-maker credits)
+gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
 
-# Initialize Clients
-anthropic_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-gemini_client = genai.Client(api_key=GEMINI_API_KEY)
-
-CLAUDE_MODEL = "claude-opus-4-6"
-GEMINI_MODEL = "gemini-2.5-pro"
+GEMINI_MODEL = "gemini-3.1-pro"
 WEB_ROOT = r"C:\Users\yss00\stylemedaily-web"
 GUIDES_DIR = os.path.join(WEB_ROOT, "style-guides")
 GUIDES_DATA_PATH = os.path.join(WEB_ROOT, r"src\lib\guides-data.ts")
@@ -123,27 +116,33 @@ def mark_topic_as_used(keyword):
     with open(TOPICS_FILE, "a", encoding="utf-8") as f:
         f.write(keyword + "\n")
 
+def strip_markdown_fences(text):
+    """Remove markdown code fences (```json ... ``` etc.) from Gemini responses."""
+    stripped = re.sub(r'^```[\w]*\n?', '', text.strip())
+    stripped = re.sub(r'\n?```$', '', stripped.strip())
+    return stripped.strip()
+
 def generate_targeted_blog(keyword):
-    """Generates blog post via Claude and Pinterest content via Gemini."""
-    print(f"\nGenerating blog content for: {keyword} (Claude)")
-    
-    claude_prompt = f"""
+    """Generates blog post and Pinterest content via Gemini (Vertex AI)."""
+    print(f"\nGenerating blog content for: {keyword} (Gemini)")
+
+    blog_prompt = f"""
     Target Audience: US Gen Z and Millennial women (TikTok/Instagram users).
     Aesthetic/Trend: {keyword}
-    
+
     Task:
-    1. Create a high-quality blog post in HTML format. 
-       - Tone: Personal, friendly, and expert stylist. 
+    1. Create a high-quality blog post in HTML format.
+       - Tone: Personal, friendly, and expert stylist.
        - Voice: Use Gen Z/Millennial slang naturally.
        - SEO: Naturally weave in keywords like "outfit ideas," "style guide," "how to wear," and "{keyword}."
-       - Content: 
+       - Content:
          - A catchy intro about why this trend is viral on TikTok/IG.
          - 3-4 specific styling tips in short, skimmable paragraphs.
          - A "Shop the Essentials" section recommending generic Amazon-style items.
        - Style: 'StyleMeDaily' (minimalist, elegant, high-fashion). Use clean HTML with inline CSS.
        - Be CONCISE.
 
-    Return ONLY a valid JSON object:
+    Return ONLY a valid JSON object (no markdown fences):
     {{
         "blog_html": "...",
         "blog_title": "...",
@@ -155,29 +154,28 @@ def generate_targeted_blog(keyword):
         }}
     }}
     """
-    
-    claude_response = anthropic_client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=4000,
-        messages=[{"role": "user", "content": claude_prompt}]
+
+    blog_response = gemini_client.models.generate_content(
+        model=GEMINI_MODEL,
+        contents=blog_prompt
     )
-    
+
     try:
-        raw_text = claude_response.content[0].text
+        raw_text = strip_markdown_fences(blog_response.text)
         json_match = re.search(r'(\{.*\})', raw_text, re.DOTALL)
         data = json.loads(json_match.group(1)) if json_match else json.loads(raw_text)
     except Exception as e:
-        print(f"Claude JSON Parsing failed: {e}")
+        print(f"Gemini JSON Parsing failed: {e}")
         raise e
 
     print(f"Generating Pinterest content for: {keyword} (Gemini)")
-    gemini_prompt = f"Create a viral Pinterest Pin content for the '{keyword}' aesthetic. Target: US Gen Z/Millennial women. Format: Title: (Catchy title), Description: (Under 450 chars, hashtags, end with 'Shop the look →'). Return ONLY the text."
-    gemini_response = gemini_client.models.generate_content(
+    pin_prompt = f"Create a viral Pinterest Pin content for the '{keyword}' aesthetic. Target: US Gen Z/Millennial women. Format: Title: (Catchy title), Description: (Under 450 chars, hashtags, end with 'Shop the look ->'). Return ONLY the text."
+    pin_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
-        contents=gemini_prompt
+        contents=pin_prompt
     )
-    data['pin_content'] = gemini_response.text
-    
+    data['pin_content'] = strip_markdown_fences(pin_response.text)
+
     return data
 
 def update_site_registry(slug, data):

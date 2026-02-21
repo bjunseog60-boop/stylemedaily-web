@@ -1,4 +1,4 @@
-# StyleMeDaily.com
+# TrendLoopUSA.net
 
 Personal Style Guides for Every Woman — Expert styling, curated outfits, and fashion advice.
 
