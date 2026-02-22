@@ -73,7 +73,7 @@ const posts = [
   {
     slug: 'amazon-fashion-haul',
     title: '25 Amazon Fashion Finds Under $30 That Actually Look Expensive',
-    excerpt: 'From viral TikTok picks to hidden gems — every item is rated 4+ stars and looks way more expensive than it is. Our honest take after testing each one.',
+    excerpt: 'From Editor\'s Choice picks to hidden gems -- every item is rated 4+ stars and looks way more expensive than it is. Our honest take after testing each one.',
     date: 'Feb 10, 2026',
     time: '12 min',
     cat: 'Finds',

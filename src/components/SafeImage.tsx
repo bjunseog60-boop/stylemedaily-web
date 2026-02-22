@@ -2,13 +2,7 @@
 import Image, { ImageProps } from 'next/image';
 import { useState } from 'react';
 
-const FALLBACK_IMAGES: Record<string, string> = {
-  fashion: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop',
-  workwear: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop',
-  casual: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=400&fit=crop',
-  seasonal: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop',
-  default: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop',
-};
+const FALLBACK_IMAGE = '/images/placeholder.svg';
 
 interface SafeImageProps extends Omit<ImageProps, 'onError'> {
   category?: string;
@@ -21,9 +15,7 @@ export default function SafeImage({ category, fallbackSrc, src, alt, ...props }:
 
   const handleError = () => {
     if (!hasError) {
-      const fallback = fallbackSrc
-        || FALLBACK_IMAGES[category || '']
-        || FALLBACK_IMAGES.default;
+      const fallback = fallbackSrc || FALLBACK_IMAGE;
       setImgSrc(fallback);
       setHasError(true);
     }

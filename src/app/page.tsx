@@ -27,7 +27,7 @@ export default function HomePage() {
     logo: `${SITE_URL}/logo.png`,
     sameAs: [
       'https://www.pinterest.com/stylemedaily/',
-      'https://instagram.com/stylemedaily',
+      'https://www.pinterest.com/stylemedaily_official/',
       'https://twitter.com/stylemedaily',
     ],
     contactPoint: {
