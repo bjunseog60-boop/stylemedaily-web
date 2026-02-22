@@ -11,10 +11,10 @@ export default function HomePage() {
   const editorPicks = guides.slice(0, 3);
 
   const trendingGuides = [
-    { title: 'Capsule Wardrobe Guide 2026', label: 'ESSENTIALS', url: '/guides/capsule-wardrobe-working-women-2026' },
-    { title: 'Casual Outfits That Look Expensive', label: 'ELEVATED', url: '/guides/casual-outfits-look-expensive' },
-    { title: 'First Date Outfits', label: 'OCCASION', url: '/guides/first-date-outfits-every-vibe' },
-    { title: 'Spring Fashion Trends', label: 'SEASONAL', url: '/guides/spring-fashion-trends-2026' },
+    { title: 'Capsule Wardrobe Guide 2026', emoji: '\uD83D\uDC57', color: 'from-rose-400 to-pink-500', url: '/guides/capsule-wardrobe-working-women-2026' },
+    { title: 'Casual Outfits That Look Expensive', emoji: '\u2728', color: 'from-amber-400 to-orange-500', url: '/guides/casual-outfits-look-expensive' },
+    { title: 'First Date Outfits', emoji: '\uD83C\uDF39', color: 'from-purple-400 to-indigo-500', url: '/guides/first-date-outfits-every-vibe' },
+    { title: 'Spring Fashion Trends', emoji: '\uD83C\uDF38', color: 'from-emerald-400 to-teal-500', url: '/guides/spring-fashion-trends-2026' },
   ];
 
   const organizationJsonLd = {
@@ -90,50 +90,53 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div>
-        {/* Hero - Editorial Magazine */}
-        <section className="pt-20 pb-24 border-b border-noir-200">
-          <p className="text-[10px] text-gold-500 font-medium tracking-ultra-wide uppercase mb-6">
-            The Daily Style Edit
+        {/* Hero */}
+        <section className="pt-16 pb-20 relative overflow-hidden">
+          <div className="absolute -top-20 -left-20 w-72 h-72 bg-blush-100 rounded-full blur-3xl opacity-40 pointer-events-none" />
+          <div className="absolute -top-10 right-0 w-56 h-56 bg-purple-100 rounded-full blur-3xl opacity-30 pointer-events-none" />
+
+          <p className="text-sm text-gray-400 font-mono tracking-wide uppercase mb-4 relative">
+            Your Daily Style Edit
           </p>
 
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-[1.05] mb-6 text-noir-900">
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-5 text-gray-900 relative">
             Fashion that fits{' '}
-            <span className="font-display italic text-gold-500">your life</span>
+            <span className="font-display italic bg-gradient-to-r from-blush-500 to-purple-400 bg-clip-text text-transparent">your life</span>
           </h1>
 
-          <p className="text-base text-noir-500 max-w-lg mb-10 leading-relaxed font-light">
+          <p className="text-lg text-gray-500 max-w-lg mb-8 leading-relaxed relative">
             Curated style guides, honest product reviews, and outfit inspiration
             for every occasion and every budget.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 relative">
             <Link href="/shop" className="btn-primary text-center">Shop Editor&apos;s Picks</Link>
             <Link href="/guides" className="btn-secondary text-center">Browse Style Guides</Link>
           </div>
         </section>
 
         {/* Ad banner */}
-        <AdUnit slot="8863913673" format="horizontal" className="my-6" />
+        <AdUnit slot="8863913673" format="horizontal" className="mb-4" />
 
         {/* Trending Products */}
         <TrendingProducts />
 
         {/* Editor Picks */}
         <section className="mb-20">
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between mb-6">
             <div>
-              <p className="text-[10px] text-gold-500 font-medium tracking-ultra-wide uppercase mb-2">Curated</p>
               <h2 className="section-title">Editor&apos;s Picks</h2>
+              <p className="text-sm text-gray-400 mt-1">Hand-selected guides by our styling team</p>
             </div>
-            <Link href="/guides" className="text-[11px] text-noir-500 hover:text-noir-900 font-medium tracking-wider uppercase transition-colors">View all</Link>
+            <Link href="/guides" className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">View all</Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {editorPicks.map(g => <GuideCard key={g.slug} guide={g} />)}
           </div>
         </section>
 
         {/* Ad banner */}
-        <AdUnit slot="8863913673" format="horizontal" className="mb-6" />
+        <AdUnit slot="8863913673" format="horizontal" className="mb-4" />
 
         {/* Shop by Category */}
         <ShopByCategory />
@@ -143,31 +146,30 @@ export default function HomePage() {
           <NewsletterCTA />
         </section>
 
-        {/* Trending Styles - Minimalist editorial cards */}
+        {/* Trending Styles - Gradient cards */}
         <section className="mb-16">
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between mb-6">
             <div>
-              <p className="text-[10px] text-gold-500 font-medium tracking-ultra-wide uppercase mb-2">This Week</p>
               <h2 className="section-title">Trending Styles</h2>
+              <p className="text-sm text-gray-400 mt-1">Our most popular style guides this week</p>
             </div>
             <a href="https://www.pinterest.com/yss007895/" target="_blank" rel="noopener noreferrer"
-              className="text-[11px] text-noir-500 hover:text-noir-900 font-medium tracking-wider uppercase transition-colors">
+              className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">
               Follow
             </a>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
             {trendingGuides.map((guide, i) => (
-              <Link key={i} href={guide.url} className="group block border border-noir-200 hover:border-gold-400 transition-all duration-300">
-                <div className="aspect-[3/4] bg-noir-50 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-noir-900/5 group-hover:bg-noir-900/0 transition-colors duration-300" />
-                  <div className="absolute top-4 left-4">
-                    <span className="text-[9px] font-medium tracking-ultra-wide uppercase text-gold-600 bg-white px-2.5 py-1">{guide.label}</span>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-noir-900/80 to-transparent">
-                    <p className="font-display text-white text-lg font-light leading-tight">
-                      {guide.title}
-                    </p>
-                  </div>
+              <Link key={i} href={guide.url} className="group relative rounded-xl overflow-hidden aspect-[2/3] block">
+                <div className={`absolute inset-0 bg-gradient-to-br ${guide.color} opacity-90 group-hover:opacity-100 transition-opacity duration-300`} />
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                  <span className="text-4xl mb-4">{guide.emoji}</span>
+                  <p className="font-display font-bold text-white text-base sm:text-lg leading-tight drop-shadow-sm">
+                    {guide.title}
+                  </p>
+                  <span className="mt-3 text-white/80 text-xs font-medium border border-white/30 px-3 py-1 rounded-full group-hover:bg-white/20 transition-colors">
+                    Read Guide
+                  </span>
                 </div>
               </Link>
             ))}
