@@ -14,7 +14,7 @@ export default function TermsPage() {
         <p className="text-gray-500">Last updated: February 22, 2026</p>
 
         <h2>1. Acceptance of Terms</h2>
-        <p>By accessing and using StyleMeDaily ("the Site"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.</p>
+        <p>By accessing and using StyleMeDaily (&ldquo;the Site&rdquo;), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.</p>
 
         <h2>2. Use of the Site</h2>
         <p>StyleMeDaily provides fashion guides, style advice, product recommendations, and curated outfit ideas. The content is for informational purposes only and does not constitute professional advice.</p>
@@ -33,7 +33,7 @@ export default function TermsPage() {
         <p>We strive to provide accurate product information, prices, and availability. However, prices and availability may change without notice. We are not responsible for errors in product listings or third-party retailer information.</p>
 
         <h2>7. Disclaimer of Warranties</h2>
-        <p>The Site is provided "as is" without warranties of any kind. We do not guarantee that the Site will be uninterrupted, error-free, or free of harmful components.</p>
+        <p>The Site is provided &ldquo;as is&rdquo; without warranties of any kind. We do not guarantee that the Site will be uninterrupted, error-free, or free of harmful components.</p>
 
         <h2>8. Limitation of Liability</h2>
         <p>StyleMeDaily shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Site or any products purchased through affiliate links.</p>
