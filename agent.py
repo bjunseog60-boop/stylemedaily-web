@@ -1,5 +1,7 @@
+import anthropic
 from google import genai
 import os
+HOME = os.path.expanduser("~")
 import json
 import time
 import subprocess
@@ -8,39 +10,29 @@ import sys
 import re
 import tweepy
 import shutil
-import urllib.request
 from dotenv import load_dotenv
 from datetime import datetime
 
 # Load environment variables
-if sys.platform == "win32":
-    load_dotenv(dotenv_path=r"C:\Users\yss00\.env")
-else:
-    load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "agents", ".env"))
-    load_dotenv()  # also check local .env
+load_dotenv(dotenv_path=os.path.join(HOME, ".env"))
 
-# Initialize Clients (Vertex AI - fashion-money-maker credits)
-gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
+# Configuration
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+# Initialize Clients
+anthropic_client = anthropic.AnthropicVertex(region="us-east5", project_id="fashion-money-maker")
+gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+
+CLAUDE_MODEL = "claude-opus-4-6@20251101"
 GEMINI_MODEL = "gemini-3.1-pro"
-IMAGE_MODEL = "gemini-3-pro-image"
-
-# Auto-detect environment (Windows local vs Linux VM)
-if sys.platform == "win32":
-    WEB_ROOT = r"C:\Users\yss00\stylemedaily-web"
-    PINS_FILE = r"C:\Users\yss00\pins.txt"
-    ERROR_LOG = r"C:\Users\yss00\error_log.txt"
-    TOPICS_FILE = r"C:\Users\yss00\generated_topics.txt"
-    BACKUP_ROOT = r"C:\Users\yss00\backups"
-else:
-    WEB_ROOT = os.path.dirname(os.path.abspath(__file__))
-    PINS_FILE = os.path.join(WEB_ROOT, "pins.txt")
-    ERROR_LOG = os.path.join(WEB_ROOT, "error_log.txt")
-    TOPICS_FILE = os.path.join(WEB_ROOT, "generated_topics.txt")
-    BACKUP_ROOT = os.path.join(WEB_ROOT, "backups")
-
+WEB_ROOT = os.path.join(HOME, "stylemedaily-web")
 GUIDES_DIR = os.path.join(WEB_ROOT, "style-guides")
-GUIDES_DATA_PATH = os.path.join(WEB_ROOT, "src", "lib", "guides-data.ts")
+GUIDES_DATA_PATH = os.path.join(WEB_ROOT, r"src\lib\guides-data.ts")
+PINS_FILE = os.path.join(HOME, "pins.txt")
+ERROR_LOG = os.path.join(HOME, "error_log.txt")
+TOPICS_FILE = os.path.join(HOME, "generated_topics.txt")
+BACKUP_ROOT = os.path.join(HOME, "backups")
 
 # Twitter Credentials
 TWITTER_CONFIG = {
@@ -59,10 +51,12 @@ def perform_backup():
     try:
         os.makedirs(backup_dir, exist_ok=True)
         files_to_backup = [
-            os.path.join(WEB_ROOT, "agent.py"),
-            TOPICS_FILE,
-            PINS_FILE,
-            GUIDES_DATA_PATH,
+            os.path.join(HOME, "agent.py"),
+            os.path.join(HOME, ".env"),
+            os.path.join(HOME, "generated_topics.txt"),
+            os.path.join(HOME, "pins.txt"),
+            os.path.join(HOME, "run_agent.bat"),
+            GUIDES_DATA_PATH
         ]
         for file_path in files_to_backup:
             if os.path.exists(file_path):
@@ -91,6 +85,40 @@ def post_to_twitter(title, slug):
         print(f"Twitter Posting failed: {e}")
         return False
 
+def generate_blog_image(keyword):
+    """Generate fashion image using Gemini Nano Banana"""
+    try:
+        from google import genai
+        from google.genai import types
+        import base64
+        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        response = client.models.generate_content(
+            model="gemini-2.0-flash-exp-image-generation",
+            contents=f"Generate a stylish fashion photo for: {keyword}. Modern, aesthetic, Instagram-worthy style.",
+            config=types.GenerateContentConfig(response_modalities=["IMAGE", "TEXT"])
+        )
+        for part in response.candidates[0].content.parts:
+            if part.inline_data:
+                img_data = base64.b64encode(part.inline_data.data).decode()
+                print(f"Nano Banana image generated for: {keyword}")
+                return f"data:image/png;base64,{img_data}"
+    except Exception as e:
+        print(f"Nano Banana failed: {e}")
+    return None
+def get_trending_keywords():
+    try:
+        from pytrends.request import TrendReq
+        pytrends = TrendReq(hl="en-US", tz=360)
+        pytrends.build_payload(["fashion trend 2026"], timeframe="now 7-d", geo="US")
+        related = pytrends.related_queries()
+        top = related["fashion trend 2026"]["top"]
+        if top is not None:
+            keywords = top["query"].tolist()[:5]
+            print(f"Trending keywords found: {keywords}")
+            return keywords
+    except Exception as e:
+        print(f"Trends fetch failed: {e}")
+    return []
 # Target keywords for US MZ Women (2026 Trends)
 MZ_AESTHETICS = [
     "coquette aesthetic 2026",
@@ -115,7 +143,9 @@ def get_unused_keyword():
     if os.path.exists(TOPICS_FILE):
         with open(TOPICS_FILE, "r", encoding="utf-8") as f:
             used_topics = [line.strip() for line in f.readlines() if line.strip()]
-    unused = [k for k in MZ_AESTHETICS if k not in used_topics]
+    trending = get_trending_keywords()
+    all_keywords = MZ_AESTHETICS + trending
+    unused = [k for k in all_keywords if k not in used_topics]
     if not unused:
         print("All predefined topics have been used. Resetting topic list.")
         with open(TOPICS_FILE, "w", encoding="utf-8") as f:
@@ -130,174 +160,103 @@ def mark_topic_as_used(keyword):
     with open(TOPICS_FILE, "a", encoding="utf-8") as f:
         f.write(keyword + "\n")
 
-# Verified fallback images (all confirmed 200 OK)
-FALLBACK_IMAGES = [
-    "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
-]
-
-def validate_image_url(url, timeout=10):
-    """Verify image URL returns HTTP 200 via HEAD request."""
-    if not url or not url.startswith("http"):
-        return False
-    try:
-        req = urllib.request.Request(url, method="HEAD")
-        req.add_header("User-Agent", "Mozilla/5.0 ImageValidator/1.0")
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return resp.status == 200
-    except Exception:
-        return False
-
-def get_valid_image_url(url):
-    """Return url if valid, otherwise return a verified fallback."""
-    if validate_image_url(url):
-        return url
-    print(f"Image URL failed validation: {url}")
-    for fallback in FALLBACK_IMAGES:
-        if validate_image_url(fallback):
-            print(f"Using fallback: {fallback}")
-            return fallback
-    return FALLBACK_IMAGES[0]
-
-def strip_markdown_fences(text):
-    """Remove markdown code fences (```json ... ``` etc.) from Gemini responses."""
-    stripped = re.sub(r'^```[\w]*\n?', '', text.strip())
-    stripped = re.sub(r'\n?```$', '', stripped.strip())
-    return stripped.strip()
-
-def generate_blog_image(keyword, title):
-    """Generate a blog hero image using Gemini image model."""
-    print(f"Generating image for: {title} (Gemini {IMAGE_MODEL})")
-    try:
-        img_prompt = (
-            f"Create a stylish, high-quality fashion blog hero image for '{keyword}'. "
-            f"Title: '{title}'. Modern, clean aesthetic. No text overlay. "
-            f"Photorealistic fashion photography style, soft lighting, 16:9 aspect ratio."
-        )
-        response = gemini_client.models.generate_content(
-            model=IMAGE_MODEL,
-            contents=img_prompt,
-        )
-        # Save image if binary data returned
-        if response.candidates and response.candidates[0].content.parts:
-            for part in response.candidates[0].content.parts:
-                if hasattr(part, 'inline_data') and part.inline_data:
-                    img_dir = os.path.join(WEB_ROOT, "public", "images", "generated")
-                    os.makedirs(img_dir, exist_ok=True)
-                    slug = re.sub(r'[^a-z0-9]+', '-', keyword.lower()).strip('-')
-                    img_filename = f"{datetime.now().strftime('%Y%m%d')}_{slug}.png"
-                    img_path = os.path.join(img_dir, img_filename)
-                    with open(img_path, "wb") as f:
-                        f.write(part.inline_data.data)
-                    print(f"Image saved: {img_path}")
-                    return f"/images/generated/{img_filename}"
-        print("No image data in response, using fallback")
-    except Exception as e:
-        print(f"Image generation failed: {e}")
-    return get_valid_image_url(FALLBACK_IMAGES[0])
-
-
 def generate_targeted_blog(keyword):
-    """Generates blog post and Pinterest content via Gemini (Vertex AI)."""
-    print(f"\nGenerating blog content for: {keyword} (Gemini)")
+    """Generates blog post via Claude and Pinterest content via Gemini."""
+    print(f"\nGenerating blog content for: {keyword} (Claude)")
+    
+    claude_prompt = f"""
+    Target Audience: US Gen Z and Millennial women (TikTok/Instagram users).
+    Aesthetic/Trend: {keyword}
+    
+    Task:
+    1. Create a high-quality blog post in HTML format. 
+       - Tone: Personal, friendly, and expert stylist. 
+       - Voice: Use Gen Z/Millennial slang naturally.
+       - SEO: Naturally weave in keywords like "outfit ideas," "style guide," "how to wear," and "{keyword}."
+       - Content: 
+         - A catchy intro about why this trend is viral on TikTok/IG.
+         - 3-4 specific styling tips in short, skimmable paragraphs.
+         - A "Shop the Essentials" section recommending generic Amazon-style items.
+       - Style: 'StyleMeDaily' (minimalist, elegant, high-fashion). Use clean HTML with inline CSS.
+       - Be CONCISE.
 
-    blog_prompt = f"""
-    You are a 28-year-old fashion blogger who runs StyleMeDaily. You genuinely love fashion and share personal styling experiences. You are NOT an AI. Write like a real person talking to a friend.
-
-    Topic: {keyword}
-    Site: StyleMeDaily
-    Target: US women ages 20-35
-
-    === BANNED PHRASES (absolutely never use) ===
-    - "In today's world", "In this article", "Let's dive in", "Let's dive into"
-    - "It's important to note", "Whether you're a beginner or expert"
-    - "In conclusion", "To sum up", "All in all"
-    - "game-changer", "revolutionary", "cutting-edge"
-    - "seamless", "leverage", "robust", "streamline"
-    - "Look no further", "Without further ado"
-    - "Are you looking for", "Have you ever wondered"
-    - "Elevate your", "Take it to the next level"
-    - "In the ever-evolving", "It's worth noting"
-    - Starting any paragraph with "So," or "Well,"
-    - NO emojis anywhere in the text
-    - Maximum 2 exclamation marks (!) in the entire article
-
-    === NATURAL WRITING STYLE ===
-    - Mix sentence lengths randomly: short (5 words) and long (25 words)
-    - Use casual expressions naturally: "honestly", "here's the thing", "I'd skip this", "not gonna lie"
-    - Write in first person with personal experience tone: "I've been styling this for weeks" style
-    - Use incomplete sentences occasionally: "Worth it? Absolutely." or "The verdict? Mixed."
-    - Include honest negative opinions: mention downsides, things that don't work, pieces to avoid
-    - Every article intro MUST be unique - never repeat the same opening pattern
-    - Keep paragraphs to 2-4 sentences max
-    - Sound opinionated and confident, not neutral
-
-    === HTML STRUCTURE (all required) ===
-    1. <nav class="breadcrumb"> - Home > Category > Post Title
-    2. <span class="reading-time"> - estimated read time (e.g. "6 min read")
-    3. <div class="author-box"> - author "StyleMeDaily Editorial", short bio, "Last Updated: {datetime.now().strftime('%B %Y')}", "Why Trust Us: Our team tests every trend we write about"
-    4. <nav class="toc"> - Table of Contents with anchor links to each h2
-    5. All <img> tags: descriptive alt text + <figcaption>
-    6. 2-3 internal links (href="#related-topic" with descriptive anchor text)
-    7. 1-2 external links to real sources (Vogue, Who What Wear, Harper's Bazaar, etc.)
-    8. Clean semantic HTML: article, section, h2, h3, figure, figcaption
-    9. Inline CSS: modern, minimal, mobile-friendly, system fonts, good whitespace
-
-    === SEO + E-E-A-T ===
-    1. FAQ section at end: 3-4 real questions people actually Google about this topic
-    2. <script type="application/ld+json"> with FAQPage schema
-    3. Meta description: exactly 150-160 chars, compelling, contains "{keyword}"
-    4. Use "{keyword}" naturally 3-5 times (never stuffed)
-    5. H2 headings should contain related search terms
-    6. Cite 1+ real fashion source with link
-    7. Include 1-2 specific stats or trend data points
-    8. Show expertise through specific brand names, fabric types, color palettes
-
-    === CONTENT ===
-    - Intro: Bold claim, personal anecdote, or provocative question. NEVER generic.
-    - Body: 3-4 sections with specific, actionable styling tips
-    - Products: "Shop the Look" with 4-5 product recommendations (names + why they work, no links)
-    - Closing: Strong opinionated take on where this trend is heading
-
-    Return ONLY a valid JSON object (no markdown fences):
+    Return ONLY a valid JSON object:
     {{
-        "blog_html": "full HTML content as described above",
-        "blog_title": "catchy, SEO-friendly title",
+        "blog_html": "...",
+        "blog_title": "...",
         "meta": {{
-            "category": "one of: workwear, casual, date-night, seasonal, body-type, budget, occasion",
-            "description": "150-160 char meta description with keyword",
-            "emoji": "single relevant emoji",
-            "tag": "short tag like Trending or New",
-            "canonical_slug": "url-friendly-slug"
+            "category": "...",
+            "description": "...",
+            "emoji": "...",
+            "tag": "..."
         }}
     }}
     """
-
-    blog_response = gemini_client.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=blog_prompt
+    
+    claude_response = anthropic_client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=4000,
+        messages=[{"role": "user", "content": claude_prompt}]
     )
-
+    
     try:
-        raw_text = strip_markdown_fences(blog_response.text)
+        raw_text = claude_response.content[0].text
         json_match = re.search(r'(\{.*\})', raw_text, re.DOTALL)
         data = json.loads(json_match.group(1)) if json_match else json.loads(raw_text)
     except Exception as e:
-        print(f"Gemini JSON Parsing failed: {e}")
+        print(f"Claude JSON Parsing failed: {e}")
         raise e
 
     print(f"Generating Pinterest content for: {keyword} (Gemini)")
-    pin_prompt = f"Create a viral Pinterest Pin content for the '{keyword}' aesthetic. Target: US Gen Z/Millennial women. Format: Title: (Catchy title), Description: (Under 450 chars, hashtags, end with 'Shop the look ->'). Return ONLY the text."
-    pin_response = gemini_client.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=pin_prompt
+    gemini_prompt = f"Create a viral Pinterest Pin content for the '{keyword}' aesthetic. Target: US Gen Z/Millennial women. Format: Title: (Catchy title), Description: (Under 450 chars, hashtags, end with 'Shop the look →'). Return ONLY the text."
+    claude_pin_response = anthropic_client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=1000, messages=[{"role": "user", "content": gemini_prompt}]
     )
-    data['pin_content'] = strip_markdown_fences(pin_response.text)
-
+    data['pin_content'] = claude_pin_response.content[0].text
+    
     return data
+
+
+def update_feed_xml(data, slug):
+    """Updates feed.xml with new blog post for Pinterest auto-publish."""
+    import xml.etree.ElementTree as ET
+    feed_path = os.path.join(WEB_ROOT, "public", "feed.xml")
+    
+    try:
+        tree = ET.parse(feed_path)
+        channel = tree.find("channel")
+    except:
+        root = ET.fromstring("""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>StyleMeDaily</title>
+<link>https://yss007895-code.github.io/stylemedaily-web/</link>
+<description>Personal Style Guides for Every Woman</description>
+</channel></rss>""")
+        tree = ET.ElementTree(root)
+        channel = root.find("channel")
+    
+    blog_url = f"https://yss007895-code.github.io/stylemedaily-web/style-guides/{slug}.html"
+    
+    for item in channel.findall("item"):
+        if item.find("link") is not None and item.find("link").text == blog_url:
+            return
+    
+    new_item = ET.SubElement(channel, "item")
+    ET.SubElement(new_item, "title").text = data.get("blog_title", "Style Guide")
+    ET.SubElement(new_item, "link").text = blog_url
+    ET.SubElement(new_item, "description").text = data.get("meta_description", "Fashion style guide")
+    
+    img = data.get("nano_banana_image") or "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg"
+    enclosure = ET.SubElement(new_item, "enclosure")
+    enclosure.set("url", img)
+    enclosure.set("type", "image/jpeg")
+    
+    ET.indent(tree, space="  ")
+    tree.write(feed_path, encoding="unicode", xml_declaration=True)
+    print(f"Feed updated: {data.get('blog_title')}")
+
+
 
 def update_site_registry(slug, data):
     """Updates guides-data.ts with the new blog post entry."""
@@ -316,7 +275,7 @@ def update_site_registry(slug, data):
     date: '{datetime.now().strftime('%Y-%m-%d')}',
     tag: '{data['meta'].get('tag', 'New')}',
     emoji: '{data['meta'].get('emoji', '✨')}',
-    image: '{get_valid_image_url(data.get("image_url", FALLBACK_IMAGES[0]))}',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   }},
 """
@@ -338,8 +297,13 @@ def save_and_push(data):
         os.makedirs(GUIDES_DIR, exist_ok=True)
     filepath = os.path.join(GUIDES_DIR, filename)
     
+    nb_image = generate_blog_image(data.get("keyword", "fashion"))
+    if nb_image:
+        nb_html = '<img src="' + nb_image + '" alt="AI generated fashion" style="width:100%;max-width:700px;border-radius:12px;margin:20px 0;">'
+        data["blog_html"] = data["blog_html"].replace("</body>", nb_html + "</body>")
+
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write(data['blog_html'])
+        f.write(data["blog_html"])
     print(f"Blog saved to: {filepath}")
 
     update_site_registry(slug, data)
@@ -350,6 +314,7 @@ def save_and_push(data):
 
     os.chdir(WEB_ROOT)
     subprocess.run(["git", "pull", "--rebase", "origin", "main"], capture_output=True)
+    update_feed_xml(data, slug)
     subprocess.run(["git", "add", "."], check=True)
     
     status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout
@@ -364,8 +329,6 @@ def run_workflow():
     keyword = get_unused_keyword()
     data = generate_targeted_blog(keyword)
     slug = "".join([c for c in data['blog_title'] if c.isalnum() or c==' ']).rstrip().replace(' ', '-').lower()
-    # Generate hero image
-    data['image_url'] = generate_blog_image(keyword, data['blog_title'])
     save_and_push(data)
     mark_topic_as_used(keyword)
     post_to_twitter(data['blog_title'], slug)

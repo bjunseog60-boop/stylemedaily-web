@@ -31,15 +31,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-Q830T5X250" strategy="afterInteractive" />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q830T5X250');`}
-        </Script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
-      <body className="min-h-screen bg-white antialiased">
+      <body className="min-h-screen bg-cream antialiased">
         <a href="#main-content" className="skip-link">Skip to content</a>
         <script
           type="application/ld+json"
@@ -61,22 +57,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             },
           }) }}
         />
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-            strategy="afterInteractive"
-          />
-        )}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-            `}
-          </Script>
-        )}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WSQ75SKGBL"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WSQ75SKGBL');
+          `}
+        </Script>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8049649445649586"

@@ -2,68 +2,50 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'StyleMeDaily terms of service -- rules and guidelines for using our website.',
+  description: 'Terms of Service for StyleMeDaily - read our usage terms and conditions.',
 };
 
 export default function TermsPage() {
   return (
-    <div className="pt-12 max-w-3xl mx-auto">
-      <header className="mb-10">
-        <h1 className="font-display text-3xl font-bold text-gray-900 mb-2">Terms of Service</h1>
-        <p className="text-sm text-gray-400">Last updated: February 21, 2026</p>
-      </header>
+    <div className="max-w-3xl mx-auto py-16">
+      <h1 className="font-display text-3xl font-bold text-gray-900 mb-8">Terms of Service</h1>
 
-      <div className="prose-style">
-        <p>By accessing and using StyleMeDaily (&quot;the Site&quot;), you accept and agree to be bound by these Terms of Service.</p>
+      <div className="prose-style space-y-6 text-sm">
+        <p className="text-gray-500">Last updated: February 22, 2026</p>
 
-        <h2>Use of the Site</h2>
-        <p>You agree to use the Site only for lawful purposes and in accordance with these Terms. You agree not to:</p>
-        <ul className="list-disc pl-6 space-y-1 text-gray-600 text-sm mb-4">
-          <li>Use the Site in any way that violates applicable laws or regulations</li>
-          <li>Reproduce, distribute, or create derivative works from our content without permission</li>
-          <li>Attempt to gain unauthorized access to any part of the Site</li>
-          <li>Use automated systems to scrape or collect data from the Site</li>
-        </ul>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using StyleMeDaily (&ldquo;the Site&rdquo;), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.</p>
 
-        <h2>Intellectual Property</h2>
-        <p>
-          All content on this Site, including text, graphics, logos, and images, is the property of StyleMeDaily or its content suppliers and is protected by copyright laws. You may not reproduce, distribute, or create derivative works without our express written consent.
-        </p>
+        <h2>2. Use of the Site</h2>
+        <p>StyleMeDaily provides fashion guides, style advice, product recommendations, and curated outfit ideas. The content is for informational purposes only and does not constitute professional advice.</p>
 
-        <h2>Third-Party Links</h2>
-        <p>
-          Our Site contains links to third-party websites and services, including affiliate links. We are not responsible for the content, privacy policies, or practices of any third-party sites. We encourage you to review the terms and privacy policies of any third-party site you visit.
-        </p>
+        <h2>3. Affiliate Links and Advertising</h2>
+        <p>The Site participates in affiliate programs including Amazon Services LLC Associates Program and other affiliate networks. This means we may earn a commission when you click on affiliate links and make a purchase, at no additional cost to you.</p>
+        <p>The Site also displays advertisements through Google AdSense and other advertising networks. These ads may use cookies to serve relevant content.</p>
 
-        <h2>Disclaimer of Warranties</h2>
-        <p>
-          The Site is provided on an &quot;as is&quot; and &quot;as available&quot; basis. We make no warranties, expressed or implied, regarding the operation of the Site or the information, content, or materials included on the Site.
-        </p>
+        <h2>4. Intellectual Property</h2>
+        <p>All content on StyleMeDaily, including text, graphics, logos, and design elements, is the property of StyleMeDaily and protected by copyright laws. You may not reproduce, distribute, or modify any content without written permission.</p>
 
-        <h2>Limitation of Liability</h2>
-        <p>
-          To the fullest extent permitted by applicable law, StyleMeDaily shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the Site.
-        </p>
+        <h2>5. User Conduct</h2>
+        <p>You agree not to use the Site in any way that could damage, disable, or impair the Site, or interfere with any other party{"'"}s use of the Site.</p>
 
-        <h2>Indemnification</h2>
-        <p>
-          You agree to indemnify and hold harmless StyleMeDaily and its affiliates from any claims, damages, or expenses arising from your use of the Site or violation of these Terms.
-        </p>
+        <h2>6. Product Information</h2>
+        <p>We strive to provide accurate product information, prices, and availability. However, prices and availability may change without notice. We are not responsible for errors in product listings or third-party retailer information.</p>
 
-        <h2>Changes to Terms</h2>
-        <p>
-          We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to the Site. Your continued use of the Site after any changes constitutes acceptance of the new Terms.
-        </p>
+        <h2>7. Disclaimer of Warranties</h2>
+        <p>The Site is provided &ldquo;as is&rdquo; without warranties of any kind. We do not guarantee that the Site will be uninterrupted, error-free, or free of harmful components.</p>
 
-        <h2>Governing Law</h2>
-        <p>
-          These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.
-        </p>
+        <h2>8. Limitation of Liability</h2>
+        <p>StyleMeDaily shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Site or any products purchased through affiliate links.</p>
 
-        <h2>Contact</h2>
-        <p>
-          Questions about these Terms? Contact us at <a href="mailto:contact@stylemedaily.org">contact@stylemedaily.org</a>.
-        </p>
+        <h2>9. Third-Party Links</h2>
+        <p>The Site contains links to third-party websites, including retail partners. We are not responsible for the content, privacy policies, or practices of these external sites.</p>
+
+        <h2>10. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. Continued use of the Site after changes constitutes acceptance of the updated Terms.</p>
+
+        <h2>11. Contact</h2>
+        <p>For questions about these Terms, please contact us at <a href="mailto:yss007895@gmail.com">yss007895@gmail.com</a>.</p>
       </div>
     </div>
   );
