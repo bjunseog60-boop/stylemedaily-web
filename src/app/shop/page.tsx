@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   keywords: ['shop fashion', 'curated fashion', 'affordable fashion', 'women clothing', 'style picks 2026'],
 };
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default function ShopPage() {
   const allProducts = getAllProducts();
 
