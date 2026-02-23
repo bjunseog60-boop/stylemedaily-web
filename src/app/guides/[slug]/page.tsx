@@ -1,3 +1,4 @@
+import { AdSenseUnit, ViralVideoGrid } from '@/components/AdsAndVideos';
 import { notFound } from 'next/navigation';
 import SafeImage from '@/components/SafeImage';
 import Link from 'next/link';
@@ -297,6 +298,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         <p className="text-xs text-gray-400 text-center mt-8">
           Last updated: {guide.date} · Affiliate disclosure: Some links may earn us a commission at no extra cost to you.
         </p>
+        <ViralVideoGrid />
       </article>
 
       {/* Mobile Sticky Shop Bar */}
