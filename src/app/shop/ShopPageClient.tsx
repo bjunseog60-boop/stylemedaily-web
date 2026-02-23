@@ -1,6 +1,5 @@
 'use client';
 import { useState, useMemo } from 'react';
-import SafeImage from '@/components/SafeImage';
 import type { AffiliateProduct } from '@/lib/guides-data';
 
 type ProductWithSource = AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category?: string };
@@ -10,128 +9,74 @@ interface ShopPageClientProps {
   categories: { slug: string; name: string }[];
 }
 
-const priceRanges = [
-  { label: 'All Prices', min: 0, max: Infinity },
-  { label: 'Under $25', min: 0, max: 25 },
-  { label: '$25 - $50', min: 25, max: 50 },
-  { label: '$50+', min: 50, max: Infinity },
-];
-
 export default function ShopPageClient({ products, categories }: ShopPageClientProps) {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [activePriceRange, setActivePriceRange] = useState(0);
 
   const filtered = useMemo(() => {
-    const range = priceRanges[activePriceRange];
     return products.filter(p => {
-      let priceMatch = true;
-      if (p.price) {
-        const parsed = parseFloat(p.price.replace(/[^0-9.]/g, ''));
-        if (!isNaN(parsed)) {
-          priceMatch = parsed >= range.min && parsed < range.max;
-        }
-      }
-      
-      if (activeCategory === 'all') return priceMatch;
-      const categoryMatch = p.category === activeCategory;
-      return priceMatch && categoryMatch;
+      if (activeCategory === 'all') return true;
+      return p.category === activeCategory;
     });
-  }, [products, activeCategory, activePriceRange]);
+  }, [products, activeCategory]);
 
   return (
-    <div>
-      {/* Filters */}
-      <div className="flex flex-col sm:flex-row gap-4 mb-8">
-        <div className="flex gap-1 overflow-x-auto border-b border-gray-100 sm:border-0 pb-2 sm:pb-0">
+    <div className="flex flex-col md:flex-row gap-8">
+      {/* Sidebar Filters - Revolve Style */}
+      <div className="w-full md:w-64 flex-shrink-0">
+        <h3 className="font-bold text-lg mb-4 uppercase tracking-wider border-b border-gray-200 pb-3">Categories</h3>
+        <ul className="space-y-3">
           {categories.map(cat => (
-            <button
-              key={cat.slug}
-              onClick={() => setActiveCategory(cat.slug)}
-              className={`px-3.5 py-2 text-sm font-medium whitespace-nowrap rounded-lg transition-colors ${
-                activeCategory === cat.slug
-                  ? 'bg-gray-900 text-white'
-                  : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
-              }`}
-            >
-              {cat.name}
-            </button>
+            <li key={cat.slug}>
+              <button
+                onClick={() => setActiveCategory(cat.slug)}
+                className={`text-sm uppercase tracking-wide hover:text-black transition-colors ${
+                  activeCategory === cat.slug ? 'text-black font-bold' : 'text-gray-500'
+                }`}
+              >
+                {cat.name}
+              </button>
+            </li>
           ))}
-        </div>
-        <div className="flex gap-1 sm:ml-auto">
-          {priceRanges.map((range, i) => (
-            <button
-              key={range.label}
-              onClick={() => setActivePriceRange(i)}
-              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-colors ${
-                activePriceRange === i
-                  ? 'bg-gray-100 text-gray-900'
-                  : 'text-gray-400 hover:text-gray-600'
-              }`}
-            >
-              {range.label}
-            </button>
-          ))}
-        </div>
+        </ul>
       </div>
 
-      {/* Results count */}
-      <p className="text-xs text-gray-400 mb-4">{filtered.length} items</p>
-
-      {/* Product Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        {filtered.map((p, i) => (
-          <a
-            key={`${p.name}-${i}`}
-            href={p.url}
-            target="_blank"
-            rel="noopener noreferrer nofollow sponsored"
-            className="product-card group block"
-          >
-            {p.image ? (
-              <div className="relative h-40 overflow-hidden bg-gray-50">
-                <SafeImage
-                  src={p.image}
-                  alt={p.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"        
-                />
-                <div className="product-card-action absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity duration-300">
-                  <span className="text-white text-sm font-semibold px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg border border-white/30">
-                    Shop Now
-                  </span>
+      {/* Product Grid - Princess Polly / Revolve Style */}
+      <div className="flex-1">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-10">
+          {filtered.map((p, i) => (
+            <div key={`${p.name}-${i}`} className="group relative">
+              <a href={p.url} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block">
+                <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-100">
+                  <img
+                    src={p.image || 'https://placehold.co/600x800?text=Fashion+Item'}
+                    alt={p.name}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x800?text=Image_Fallback'; }}
+                  />
+                  {/* Quick Shop Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
+                    <button className="w-full bg-white/90 backdrop-blur text-black font-semibold uppercase tracking-wider py-3 text-xs border border-gray-200 shadow-sm hover:bg-black hover:text-white transition-colors">
+                      Shop on Amazon
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div className="h-40 bg-gray-50 flex items-center justify-center">
-                <span className="text-gray-300 text-sm">No image</span>
-              </div>
-            )}
-            <div className="p-3">
-              <p className="text-[11px] text-gray-400 uppercase tracking-wide">{p.brand}</p>
-              <h4 className="font-medium text-sm text-gray-800 group-hover:text-gray-900 transition-colors leading-tight mt-0.5 line-clamp-2">
-                {p.name}
-              </h4>
-              <div className="flex items-center gap-2 mt-1.5">
-                <span className="price-current text-sm">{p.price}</span>
-              </div>
-              <p className="text-[11px] text-gray-400 mt-1.5 line-clamp-1">
-                As seen in: {p.fromGuide}
-              </p>
+                <div className="mt-4 space-y-1">
+                  <p className="text-xs font-bold text-gray-900 uppercase tracking-widest">{p.brand}</p>
+                  <h4 className="text-sm text-gray-700 line-clamp-1 group-hover:text-black transition-colors">
+                    {p.name}
+                  </h4>
+                  <p className="text-sm font-medium text-gray-900">{p.price}</p>
+                </div>
+              </a>
             </div>
-          </a>
-        ))}
-      </div>
-
-      {filtered.length === 0 && (
-        <div className="text-center py-16">
-          <p className="text-gray-400">No items match your filters.</p>
-          <button
-            onClick={() => { setActiveCategory('all'); setActivePriceRange(0); }}
-            className="mt-3 text-sm text-gray-500 hover:text-gray-900 font-medium"
-          >
-            Clear filters
-          </button>
+          ))}
         </div>
-      )}
+        {filtered.length === 0 && (
+          <div className="text-center py-16 text-gray-500 uppercase tracking-widest text-sm">
+            No items available in this category.
+          </div>
+        )}
+      </div>
     </div>
   );
 }
