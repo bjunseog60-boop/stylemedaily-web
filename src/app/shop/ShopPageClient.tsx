@@ -3,7 +3,7 @@ import { useState, useMemo } from 'react';
 import SafeImage from '@/components/SafeImage';
 import type { AffiliateProduct } from '@/lib/guides-data';
 
-type ProductWithSource = AffiliateProduct & { fromGuide: string; fromGuideSlug: string };
+type ProductWithSource = AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category?: string };
 
 interface ShopPageClientProps {
   products: ProductWithSource[];
@@ -13,7 +13,7 @@ interface ShopPageClientProps {
 const priceRanges = [
   { label: 'All Prices', min: 0, max: Infinity },
   { label: 'Under $25', min: 0, max: 25 },
-  { label: '$25 – $50', min: 25, max: 50 },
+  { label: '$25 - $50', min: 25, max: 50 },
   { label: '$50+', min: 50, max: Infinity },
 ];
 
@@ -24,19 +24,16 @@ export default function ShopPageClient({ products, categories }: ShopPageClientP
   const filtered = useMemo(() => {
     const range = priceRanges[activePriceRange];
     return products.filter(p => {
-      const price = parseFloat(p.price.replace('$', ''));
-      const priceMatch = price >= range.min && price < range.max;
+      let priceMatch = true;
+      if (p.price) {
+        const parsed = parseFloat(p.price.replace(/[^0-9.]/g, ''));
+        if (!isNaN(parsed)) {
+          priceMatch = parsed >= range.min && parsed < range.max;
+        }
+      }
+      
       if (activeCategory === 'all') return priceMatch;
-      const catMap: Record<string, string[]> = {
-        workwear: ['work', 'professional', 'office', 'interview', 'laptop', 'blazer'],
-        casual: ['casual', 'jeans', 'sneakers', 'minimalist', 'running'],
-        'date-night': ['date', 'night'],
-        seasonal: ['spring', 'summer', 'trending', 'must-have', 'accessories'],
-        budget: ['affordable', 'budget', 'under-30', 'under-100', 'amazon-fashion'],
-      };
-      const keywords = catMap[activeCategory] || [];
-      const slug = p.fromGuideSlug || '';
-      const categoryMatch = keywords.some(k => slug.includes(k));
+      const categoryMatch = p.category === activeCategory;
       return priceMatch && categoryMatch;
     });
   }, [products, activeCategory, activePriceRange]);
@@ -45,7 +42,7 @@ export default function ShopPageClient({ products, categories }: ShopPageClientP
     <div>
       {/* Filters */}
       <div className="flex flex-col sm:flex-row gap-4 mb-8">
-        <div className="flex gap-1 overflow-x-auto border-b border-gray-100 sm:border-0">
+        <div className="flex gap-1 overflow-x-auto border-b border-gray-100 sm:border-0 pb-2 sm:pb-0">
           {categories.map(cat => (
             <button
               key={cat.slug}
@@ -95,9 +92,7 @@ export default function ShopPageClient({ products, categories }: ShopPageClientP
                 <SafeImage
                   src={p.image}
                   alt={p.name}
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"        
                 />
                 <div className="product-card-action absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg border border-white/30">

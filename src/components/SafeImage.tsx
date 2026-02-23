@@ -1,31 +1,29 @@
 'use client';
-import Image, { ImageProps } from 'next/image';
 import { useState } from 'react';
 
-const FALLBACK_IMAGE = '/images/placeholder.svg';
+const FALLBACK_IMAGE = 'https://placehold.co/600x400?text=Image';
 
-interface SafeImageProps extends Omit<ImageProps, 'onError'> {
-  category?: string;
+interface SafeImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   fallbackSrc?: string;
+  category?: string;
 }
 
-export default function SafeImage({ category, fallbackSrc, src, alt, ...props }: SafeImageProps) {
-  const [imgSrc, setImgSrc] = useState(src);
+export default function SafeImage({ fallbackSrc, src, alt, category, ...props }: SafeImageProps) {
+  const [imgSrc, setImgSrc] = useState(src || FALLBACK_IMAGE);
   const [hasError, setHasError] = useState(false);
 
   const handleError = () => {
     if (!hasError) {
-      const fallback = fallbackSrc || FALLBACK_IMAGE;
-      setImgSrc(fallback);
+      setImgSrc(fallbackSrc || FALLBACK_IMAGE);
       setHasError(true);
     }
   };
 
   return (
-    <Image
+    <img
       {...props}
-      src={imgSrc}
-      alt={alt}
+      src={imgSrc as string}
+      alt={alt || "Image"}
       onError={handleError}
     />
   );

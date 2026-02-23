@@ -40,12 +40,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/y2k-fashion-revival-ultimate-guide-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/y2k-fashion-revival-ultimate-guide-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'Levi\'s Women\'s Low Pro Jeans', brand: 'Amazon', price: '$79', url: 'https://amzn.to/example', tag: 'Best Low-Rise', image: '/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod0.jpg' },
-      { name: 'Juicy Couture Women\'s Classic Velour Hoodie', brand: 'Amazon', price: '$89', url: 'https://amzn.to/example', tag: 'Iconic Throwback', image: '/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod1.jpg' },
-      { name: 'JW PEI Women\'s Eva Shoulder Handbag', brand: 'Amazon', price: '$59', url: 'https://amzn.to/example', tag: 'Best Accessory', image: '/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod2.jpg' },
-      { name: 'Steve Madden Women\'s Slinky30 Platform Sandal', brand: 'Amazon', price: '$99', url: 'https://amzn.to/example', tag: 'Best Footwear', image: '/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod3.jpg' },
+      { name: 'Levi\'s Women\'s Low Pro Jeans', brand: 'Amazon', price: '$79', url: 'https://amzn.to/example', tag: 'Best Low-Rise', image: 'https://stylemedaily.org/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod0.jpg' },
+      { name: 'Juicy Couture Women\'s Classic Velour Hoodie', brand: 'Amazon', price: '$89', url: 'https://amzn.to/example', tag: 'Iconic Throwback', image: 'https://stylemedaily.org/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod1.jpg' },
+      { name: 'JW PEI Women\'s Eva Shoulder Handbag', brand: 'Amazon', price: '$59', url: 'https://amzn.to/example', tag: 'Best Accessory', image: 'https://stylemedaily.org/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod2.jpg' },
+      { name: 'Steve Madden Women\'s Slinky30 Platform Sandal', brand: 'Amazon', price: '$99', url: 'https://amzn.to/example', tag: 'Best Footwear', image: 'https://stylemedaily.org/images/guides/y2k-fashion-revival-ultimate-guide-2026-prod3.jpg' },
     ],
   },
   {
@@ -57,12 +57,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/quiet-luxury-essentials-investment-pieces-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/quiet-luxury-essentials-investment-pieces-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'The Drop Women\'s Noa Trench Coat', brand: 'Amazon', price: '$99', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod0.jpg' },
-      { name: 'State Cashmere Women\'s 100% Pure Cashmere Crewneck Sweater', brand: 'Amazon', price: '$125', url: 'https://amzn.to/example', tag: 'Top Rated', image: '/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod1.jpg' },
-      { name: 'BOSTANTEN Women\'s Leather Tote Bag', brand: 'Amazon', price: '$119', url: 'https://amzn.to/example', tag: 'Best for Work', image: '/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod2.jpg' },
-      { name: 'The Drop Women\'s Ian Mid Rise Relaxed-Fit Wide Leg Trousers', brand: 'Amazon', price: '$54', url: 'https://amzn.to/example', tag: 'Best Value', image: '/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod3.jpg' },
+      { name: 'The Drop Women\'s Noa Trench Coat', brand: 'Amazon', price: '$99', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod0.jpg' },
+      { name: 'State Cashmere Women\'s 100% Pure Cashmere Crewneck Sweater', brand: 'Amazon', price: '$125', url: 'https://amzn.to/example', tag: 'Top Rated', image: 'https://stylemedaily.org/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod1.jpg' },
+      { name: 'BOSTANTEN Women\'s Leather Tote Bag', brand: 'Amazon', price: '$119', url: 'https://amzn.to/example', tag: 'Best for Work', image: 'https://stylemedaily.org/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod2.jpg' },
+      { name: 'The Drop Women\'s Ian Mid Rise Relaxed-Fit Wide Leg Trousers', brand: 'Amazon', price: '$54', url: 'https://amzn.to/example', tag: 'Best Value', image: 'https://stylemedaily.org/images/guides/quiet-luxury-essentials-investment-pieces-2026-prod3.jpg' },
     ],
   },
   {
@@ -74,12 +74,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'DreamPairs Women\'s Classic Slip-On Ballet Flats', brand: 'Amazon', price: '$28', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod0.jpg' },
-      { name: 'MEROKEETY Women\'s Ribbed Long Sleeve Wrap Sweater', brand: 'Amazon', price: '$39', url: 'https://amzn.to/example', tag: 'Top Layer', image: '/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod1.jpg' },
-      { name: 'MANGOPOP Women\'s Scoop Neck Bodysuit', brand: 'Amazon', price: '$25', url: 'https://amzn.to/example', tag: 'Essential Base', image: '/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod2.jpg' },
-      { name: 'Belle Poque Women\'s A-Line Layered Tulle Midi Skirt', brand: 'Amazon', price: '$35', url: 'https://amzn.to/example', tag: 'Statement Piece', image: '/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod3.jpg' },
+      { name: 'DreamPairs Women\'s Classic Slip-On Ballet Flats', brand: 'Amazon', price: '$28', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod0.jpg' },
+      { name: 'MEROKEETY Women\'s Ribbed Long Sleeve Wrap Sweater', brand: 'Amazon', price: '$39', url: 'https://amzn.to/example', tag: 'Top Layer', image: 'https://stylemedaily.org/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod1.jpg' },
+      { name: 'MANGOPOP Women\'s Scoop Neck Bodysuit', brand: 'Amazon', price: '$25', url: 'https://amzn.to/example', tag: 'Essential Base', image: 'https://stylemedaily.org/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod2.jpg' },
+      { name: 'Belle Poque Women\'s A-Line Layered Tulle Midi Skirt', brand: 'Amazon', price: '$35', url: 'https://amzn.to/example', tag: 'Statement Piece', image: 'https://stylemedaily.org/images/guides/balletcore-style-guide-how-to-dress-like-a-ballerina-off-duty-2026-prod3.jpg' },
     ],
   },
   {
@@ -91,12 +91,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/gorpcore-womens-style-guide-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/gorpcore-womens-style-guide-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'The North Face Women\'s 1996 Retro Nuptse Jacket', brand: 'The North Face', price: '$330', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/gorpcore-womens-style-guide-2026-prod0.jpg' },
-      { name: 'Dickies Women\'s Relaxed Fit Straight Leg Cargo Pants', brand: 'Dickies', price: '$45', url: 'https://amzn.to/example', tag: 'Best Value', image: '/images/guides/gorpcore-womens-style-guide-2026-prod1.jpg' },
-      { name: 'Salomon Women\'s XT-6 Trail Running Shoes', brand: 'Salomon', price: '$190', url: 'https://amzn.to/example', tag: 'Top Footwear', image: '/images/guides/gorpcore-womens-style-guide-2026-prod2.jpg' },
-      { name: 'Carhartt Knit Cuffed Beanie A18', brand: 'Carhartt', price: '$20', url: 'https://amzn.to/example', tag: 'Essential Accessory', image: '/images/guides/gorpcore-womens-style-guide-2026-prod3.jpg' },
+      { name: 'The North Face Women\'s 1996 Retro Nuptse Jacket', brand: 'The North Face', price: '$330', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/gorpcore-womens-style-guide-2026-prod0.jpg' },
+      { name: 'Dickies Women\'s Relaxed Fit Straight Leg Cargo Pants', brand: 'Dickies', price: '$45', url: 'https://amzn.to/example', tag: 'Best Value', image: 'https://stylemedaily.org/images/guides/gorpcore-womens-style-guide-2026-prod1.jpg' },
+      { name: 'Salomon Women\'s XT-6 Trail Running Shoes', brand: 'Salomon', price: '$190', url: 'https://amzn.to/example', tag: 'Top Footwear', image: 'https://stylemedaily.org/images/guides/gorpcore-womens-style-guide-2026-prod2.jpg' },
+      { name: 'Carhartt Knit Cuffed Beanie A18', brand: 'Carhartt', price: '$20', url: 'https://amzn.to/example', tag: 'Essential Accessory', image: 'https://stylemedaily.org/images/guides/gorpcore-womens-style-guide-2026-prod3.jpg' },
     ],
   },
   {
@@ -108,12 +108,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/coquette-aesthetic-2026-ultimate-guide-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/coquette-aesthetic-2026-ultimate-guide-hero.jpg',
     affiliateProducts: [
-      { name: 'Simplee Women\'s Lace Trim Satin Cami Slip Dress', brand: 'Amazon', price: '$32', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/coquette-aesthetic-2026-ultimate-guide-prod0.jpg' },
-      { name: 'Offray Grosgrain Craft Ribbon, 3/8-Inch, 18-Yard Spool, Light Pink', brand: 'Amazon', price: '$8', url: 'https://amzn.to/example', tag: 'Essential Accessory', image: '/images/guides/coquette-aesthetic-2026-ultimate-guide-prod1.jpg' },
-      { name: 'DREAM PAIRS Women\'s Ankle Strap Mary Jane Platform Pumps', brand: 'Amazon', price: '$45', url: 'https://amzn.to/example', tag: 'Perfect Footwear', image: '/images/guides/coquette-aesthetic-2026-ultimate-guide-prod2.jpg' },
-      { name: 'Grace Karin Women\'s Ruffle Trim Knit Cardigan Sweater', brand: 'Amazon', price: '$38', url: 'https://amzn.to/example', tag: 'Cozy Layer', image: '/images/guides/coquette-aesthetic-2026-ultimate-guide-prod3.jpg' },
+      { name: 'Simplee Women\'s Lace Trim Satin Cami Slip Dress', brand: 'Amazon', price: '$32', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/coquette-aesthetic-2026-ultimate-guide-prod0.jpg' },
+      { name: 'Offray Grosgrain Craft Ribbon, 3/8-Inch, 18-Yard Spool, Light Pink', brand: 'Amazon', price: '$8', url: 'https://amzn.to/example', tag: 'Essential Accessory', image: 'https://stylemedaily.org/images/guides/coquette-aesthetic-2026-ultimate-guide-prod1.jpg' },
+      { name: 'DREAM PAIRS Women\'s Ankle Strap Mary Jane Platform Pumps', brand: 'Amazon', price: '$45', url: 'https://amzn.to/example', tag: 'Perfect Footwear', image: 'https://stylemedaily.org/images/guides/coquette-aesthetic-2026-ultimate-guide-prod2.jpg' },
+      { name: 'Grace Karin Women\'s Ruffle Trim Knit Cardigan Sweater', brand: 'Amazon', price: '$38', url: 'https://amzn.to/example', tag: 'Cozy Layer', image: 'https://stylemedaily.org/images/guides/coquette-aesthetic-2026-ultimate-guide-prod3.jpg' },
     ],
   },
   {
@@ -125,12 +125,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/mob-wife-glamour-aesthetic-guide-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/mob-wife-glamour-aesthetic-guide-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'Bellivera Women\'s Faux Fur Shaggy Winter Coat', brand: 'Amazon', price: '$89', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod0.jpg' },
-      { name: 'SPANX Faux Leather Leggings for Women', brand: 'Amazon', price: '$98', url: 'https://amzn.to/example', tag: 'Sleek Base', image: '/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod1.jpg' },
-      { name: 'PAVOI 14K Gold Plated Chunky Open Hoops', brand: 'Amazon', price: '$14', url: 'https://amzn.to/example', tag: 'Statement Jewelry', image: '/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod2.jpg' },
-      { name: 'Floerns Women\'s V Neck Long Sleeve Leopard Print Bodycon Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/example', tag: 'Iconic Print', image: '/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod3.jpg' },
+      { name: 'Bellivera Women\'s Faux Fur Shaggy Winter Coat', brand: 'Amazon', price: '$89', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod0.jpg' },
+      { name: 'SPANX Faux Leather Leggings for Women', brand: 'Amazon', price: '$98', url: 'https://amzn.to/example', tag: 'Sleek Base', image: 'https://stylemedaily.org/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod1.jpg' },
+      { name: 'PAVOI 14K Gold Plated Chunky Open Hoops', brand: 'Amazon', price: '$14', url: 'https://amzn.to/example', tag: 'Statement Jewelry', image: 'https://stylemedaily.org/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod2.jpg' },
+      { name: 'Floerns Women\'s V Neck Long Sleeve Leopard Print Bodycon Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/example', tag: 'Iconic Print', image: 'https://stylemedaily.org/images/guides/mob-wife-glamour-aesthetic-guide-2026-prod3.jpg' },
     ],
   },
   {
@@ -142,12 +142,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/old-money-summer-aesthetic-guide-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/old-money-summer-aesthetic-guide-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'The Drop Women\'s Britt Tiered Maxi Tent Dress', brand: 'The Drop', price: '$59', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/old-money-summer-aesthetic-guide-2026-prod0.jpg' },
-      { name: 'Amazon Essentials Women\'s Linen Blend Drawstring Wide Leg Pant', brand: 'Amazon', price: '$34', url: 'https://amzn.to/example', tag: 'Linen Essential', image: '/images/guides/old-money-summer-aesthetic-guide-2026-prod1.jpg' },
-      { name: 'JW PEI Women\'s Eva Shoulder Handbag', brand: 'JW PEI', price: '$58', url: 'https://amzn.to/example', tag: 'Must-Have Accessory', image: '/images/guides/old-money-summer-aesthetic-guide-2026-prod2.jpg' },
-      { name: 'CUSHIONAIRE Women\'s Lane Cork Footbed Sandal with +Comfort', brand: 'CUSHIONAIRE', price: '$29', url: 'https://amzn.to/example', tag: 'Timeless Footwear', image: '/images/guides/old-money-summer-aesthetic-guide-2026-prod3.jpg' },
+      { name: 'The Drop Women\'s Britt Tiered Maxi Tent Dress', brand: 'The Drop', price: '$59', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/old-money-summer-aesthetic-guide-2026-prod0.jpg' },
+      { name: 'Amazon Essentials Women\'s Linen Blend Drawstring Wide Leg Pant', brand: 'Amazon', price: '$34', url: 'https://amzn.to/example', tag: 'Linen Essential', image: 'https://stylemedaily.org/images/guides/old-money-summer-aesthetic-guide-2026-prod1.jpg' },
+      { name: 'JW PEI Women\'s Eva Shoulder Handbag', brand: 'JW PEI', price: '$58', url: 'https://amzn.to/example', tag: 'Must-Have Accessory', image: 'https://stylemedaily.org/images/guides/old-money-summer-aesthetic-guide-2026-prod2.jpg' },
+      { name: 'CUSHIONAIRE Women\'s Lane Cork Footbed Sandal with +Comfort', brand: 'CUSHIONAIRE', price: '$29', url: 'https://amzn.to/example', tag: 'Timeless Footwear', image: 'https://stylemedaily.org/images/guides/old-money-summer-aesthetic-guide-2026-prod3.jpg' },
     ],
   },
   {
@@ -159,12 +159,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'The Drop Women\'s Blake Long-Sleeve T-Shirt', brand: 'Amazon', price: '$25', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod0.jpg' },
-      { name: 'The Drop Women\'s Sia Loose-Fit High-Waist Wide Leg Trouser Pant', brand: 'Amazon', price: '$55', url: 'https://amzn.to/example', tag: 'Essential Bottoms', image: '/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod1.jpg' },
-      { name: 'PAVOI 14K Gold Plated Lightweight Chunky Open Hoops', brand: 'Amazon', price: '$14', url: 'https://amzn.to/example', tag: 'Perfect Accessory', image: '/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod2.jpg' },
-      { name: 'TOCESS Big Hair Claw Clips for Thick Hair', brand: 'Amazon', price: '$10', url: 'https://amzn.to/example', tag: 'Must-Have Hair', image: '/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod3.jpg' },
+      { name: 'The Drop Women\'s Blake Long-Sleeve T-Shirt', brand: 'Amazon', price: '$25', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod0.jpg' },
+      { name: 'The Drop Women\'s Sia Loose-Fit High-Waist Wide Leg Trouser Pant', brand: 'Amazon', price: '$55', url: 'https://amzn.to/example', tag: 'Essential Bottoms', image: 'https://stylemedaily.org/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod1.jpg' },
+      { name: 'PAVOI 14K Gold Plated Lightweight Chunky Open Hoops', brand: 'Amazon', price: '$14', url: 'https://amzn.to/example', tag: 'Perfect Accessory', image: 'https://stylemedaily.org/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod2.jpg' },
+      { name: 'TOCESS Big Hair Claw Clips for Thick Hair', brand: 'Amazon', price: '$10', url: 'https://amzn.to/example', tag: 'Must-Have Hair', image: 'https://stylemedaily.org/images/guides/how-to-master-the-clean-girl-aesthetic-your-ultimate-guide-2026-prod3.jpg' },
     ],
   },
   {
@@ -176,12 +176,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/eclectic-grandpa-chic-style-guide-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/eclectic-grandpa-chic-style-guide-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'The KENSINGTON Men\'s Chunky Knit Argyle Cardigan Sweater', brand: 'Amazon', price: '$48', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/eclectic-grandpa-chic-style-guide-2026-prod0.jpg' },
-      { name: 'DREAM PAIRS Women\'s Classic Lug Sole Penny Loafers', brand: 'Amazon', price: '$39', url: 'https://amzn.to/example', tag: 'Top Footwear', image: '/images/guides/eclectic-grandpa-chic-style-guide-2026-prod1.jpg' },
-      { name: 'GRACE KARIN Women\'s High Waisted Pleated Trousers with Pockets', brand: 'Amazon', price: '$35', url: 'https://amzn.to/example', tag: 'Must-Have Pant', image: '/images/guides/eclectic-grandpa-chic-style-guide-2026-prod2.jpg' },
-      { name: 'HOTSOX Men\'s Famous Artist Series Novelty Crew Socks', brand: 'Amazon', price: '$15', url: 'https://amzn.to/example', tag: 'Essential Accessory', image: '/images/guides/eclectic-grandpa-chic-style-guide-2026-prod3.jpg' },
+      { name: 'The KENSINGTON Men\'s Chunky Knit Argyle Cardigan Sweater', brand: 'Amazon', price: '$48', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/eclectic-grandpa-chic-style-guide-2026-prod0.jpg' },
+      { name: 'DREAM PAIRS Women\'s Classic Lug Sole Penny Loafers', brand: 'Amazon', price: '$39', url: 'https://amzn.to/example', tag: 'Top Footwear', image: 'https://stylemedaily.org/images/guides/eclectic-grandpa-chic-style-guide-2026-prod1.jpg' },
+      { name: 'GRACE KARIN Women\'s High Waisted Pleated Trousers with Pockets', brand: 'Amazon', price: '$35', url: 'https://amzn.to/example', tag: 'Must-Have Pant', image: 'https://stylemedaily.org/images/guides/eclectic-grandpa-chic-style-guide-2026-prod2.jpg' },
+      { name: 'HOTSOX Men\'s Famous Artist Series Novelty Crew Socks', brand: 'Amazon', price: '$15', url: 'https://amzn.to/example', tag: 'Essential Accessory', image: 'https://stylemedaily.org/images/guides/eclectic-grandpa-chic-style-guide-2026-prod3.jpg' },
     ],
   },
   {
@@ -193,12 +193,12 @@ export const guides: StyleGuide[] = [  {
     date: '2026-02-23',
     tag: 'Guide',
     emoji: '👗',
-    image: '/images/guides/office-siren-corporate-wear-guide-2026-hero.jpg',
+    image: 'https://stylemedaily.org/images/guides/office-siren-corporate-wear-guide-2026-hero.jpg',
     affiliateProducts: [
-      { name: 'GRACE KARIN Women\'s Pencil Skirt High Waist Stretchy Bodycon Skirt', brand: 'Amazon', price: '$32', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/office-siren-corporate-wear-guide-2026-prod0.jpg' },
-      { name: 'SOJOS Retro 90s Rectangle Sunglasses for Women Men Narrow Small Frame SJ2107', brand: 'Amazon', price: '$15', url: 'https://amzn.to/example', tag: 'Key Accessory', image: '/images/guides/office-siren-corporate-wear-guide-2026-prod1.jpg' },
-      { name: 'Cicy Bell Women\'s Casual Blazer Open Front Long Sleeve Work Office Jacket', brand: 'Amazon', price: '$55', url: 'https://amzn.to/example', tag: 'Top Layer', image: '/images/guides/office-siren-corporate-wear-guide-2026-prod2.jpg' },
-      { name: 'MANGOPOP Women\'s Mock Turtle Neck Long Sleeve Bodysuit', brand: 'Amazon', price: '$25', url: 'https://amzn.to/example', tag: 'Perfect Base', image: '/images/guides/office-siren-corporate-wear-guide-2026-prod3.jpg' },
+      { name: 'GRACE KARIN Women\'s Pencil Skirt High Waist Stretchy Bodycon Skirt', brand: 'Amazon', price: '$32', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://stylemedaily.org/images/guides/office-siren-corporate-wear-guide-2026-prod0.jpg' },
+      { name: 'SOJOS Retro 90s Rectangle Sunglasses for Women Men Narrow Small Frame SJ2107', brand: 'Amazon', price: '$15', url: 'https://amzn.to/example', tag: 'Key Accessory', image: 'https://stylemedaily.org/images/guides/office-siren-corporate-wear-guide-2026-prod1.jpg' },
+      { name: 'Cicy Bell Women\'s Casual Blazer Open Front Long Sleeve Work Office Jacket', brand: 'Amazon', price: '$55', url: 'https://amzn.to/example', tag: 'Top Layer', image: 'https://stylemedaily.org/images/guides/office-siren-corporate-wear-guide-2026-prod2.jpg' },
+      { name: 'MANGOPOP Women\'s Mock Turtle Neck Long Sleeve Bodysuit', brand: 'Amazon', price: '$25', url: 'https://amzn.to/example', tag: 'Perfect Base', image: 'https://stylemedaily.org/images/guides/office-siren-corporate-wear-guide-2026-prod3.jpg' },
     ],
   },
 ];
@@ -213,23 +213,23 @@ export function getGuidesByCategory(category: string) {
 }
 
 /** Extract all products from all guides, deduplicated by name+brand */
-export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] {
+export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
   const seen = new Set<string>();
-  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] = [];
+  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
   for (const guide of guides) {
     if (!guide.affiliateProducts) continue;
     for (const p of guide.affiliateProducts) {
       const key = `${p.name}|${p.brand}`;
       if (seen.has(key)) continue;
       seen.add(key);
-      products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug });
+      products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
     }
   }
   return products;
 }
 
 /** Get featured products based on tags like Editor Pick, Best Overall, etc. */
-export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] {
+export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
   const all = getAllProducts();
   const priorityTags = ['Editor Pick', 'Best Overall', 'Best Value', 'Best Seller', 'Trend Pick', 'Must Have', '#1 Must Have', 'Top Pick'];
   const featured = all.filter(p => p.tag && priorityTags.includes(p.tag));
@@ -238,9 +238,9 @@ export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fr
 }
 
 /** Get products filtered by guide category */
-export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] {
+export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
   const seen = new Set<string>();
-  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] = [];
+  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
   const categoryGuides = category === 'all' ? guides : guides.filter(g => g.category === category);
   for (const guide of categoryGuides) {
     if (!guide.affiliateProducts) continue;
@@ -248,7 +248,7 @@ export function getProductsByCategory(category: string, count: number = 8): (Aff
       const key = `${p.name}|${p.brand}`;
       if (seen.has(key)) continue;
       seen.add(key);
-      products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug });
+      products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
     }
   }
   return products.slice(0, count);
