@@ -376,6 +376,24 @@ export const guides: StyleGuide[] = [
       { name: 'MANGOPOP Women\'s Mock Turtle Neck Long Sleeve Bodysuit', brand: 'Amazon', price: '$25', url: 'https://www.amazon.com/s?k=MANGOPOP%20Women%27s%20Mock%20Turtle%20Neck%20Long%20Sleeve%20Bodysuit&tag=stylemedaily-20', tag: 'Perfect Base', image: '/images/guides/office-siren-corporate-wear-guide-2026-prod3.jpg' },
     ],
   },
+  {
+    slug: 'how-to-style-wide-leg-jeans-like-a-pro-2026',
+    title: 'Your Ultimate Guide to Styling Wide Leg Jeans Like a Pro -- 2026 Edition',
+    category: 'casual',
+    description: 'Unlock the secrets to rocking wide leg jeans! From casual cool to polished chic, this guide shows you how to style them for every occasion in 2026. Get ready to look fab!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'High-Waisted Dark Wash Wide Leg Jeans', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Ribbed Knit Cropped Sweater', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW', tag: 'Top Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chunky Platform Sneakers', brand: 'Amazon', price: '$90', url: 'https://amzn.to/4tH7kT9', tag: 'Casual Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Fitted Black Bodysuit', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3Mro7cj', tag: 'Versatile Base', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Structured Mini Crossbody Bag', brand: 'Amazon', price: '$60', url: 'https://amzn.to/4rUPDhk', tag: 'Accessory Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
