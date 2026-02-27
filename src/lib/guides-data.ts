@@ -394,6 +394,24 @@ export const guides: StyleGuide[] = [
       { name: 'Structured Mini Crossbody Bag', brand: 'Amazon', price: '$60', url: 'https://amzn.to/4rUPDhk', tag: 'Accessory Must-Have', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-rock-jumpsuits-for-any-occasion-2026',
+    title: 'Your Ultimate Guide to Styling Jumpsuits: Look Chic for Any Occasion (2026)',
+    category: 'occasion',
+    description: 'Jumpsuits are a total game-changer! Learn how to style jumpsuits for work, casual outings, or date night with these best friend tips. Find your perfect fit!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '✨',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Wide-Leg Black Jumpsuit', brand: 'Amazon', price: '$75', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Denim Utility Jumpsuit', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3OhrhzW', tag: 'Casual Favorite', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Statement Belt with Gold Buckle', brand: 'Amazon', price: '$30', url: 'https://amzn.to/4kNVNxy', tag: 'Accessorize', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Comfortable Block Heels', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OrVpsf', tag: 'Versatile Shoe', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Delicate Layered Necklace Set', brand: 'Amazon', price: '$25', url: 'https://amzn.to/4tH7kT9', tag: 'Jewelry Pick', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
