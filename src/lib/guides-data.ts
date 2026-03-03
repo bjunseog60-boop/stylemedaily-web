@@ -412,6 +412,24 @@ export const guides: StyleGuide[] = [
       { name: 'Delicate Layered Necklace Set', brand: 'Amazon', price: '$25', url: 'https://amzn.to/4tH7kT9', tag: 'Jewelry Pick', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'maternity-style-guide-chic-and-comfy-2026',
+    title: 'Your Ultimate Maternity Style Guide: Stay Chic & Comfy While Expecting 2026',
+    category: 'body-type',
+    description: 'Navigating pregnancy fashion? This guide helps you stay chic, comfy, and totally YOU with practical tips and stylish maternity essentials for every trimester. #maternitystyle',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: '🤰',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Buttery Soft Maternity Leggings', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Flowy Empire Waist Maxi Dress', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3ZCaw4S', tag: 'Versatile Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Supportive Over-the-Bump Jeans', brand: 'Amazon', price: '$70', url: 'https://amzn.to/3Mro3JB', tag: 'Denim Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Seamless Comfort Nursing Bra', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3OhrhzW', tag: 'Post-Bump Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Linen Button-Up Shirt', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4anggFT', tag: 'Layering Hero', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
