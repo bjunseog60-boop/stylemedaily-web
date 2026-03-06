@@ -430,6 +430,24 @@ export const guides: StyleGuide[] = [
       { name: 'Oversized Linen Button-Up Shirt', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4anggFT', tag: 'Layering Hero', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'smart-packing-tropical-vacation-2026',
+    title: 'Smart Packing for Your Tropical Getaway: Stress-Free Style 2026',
+    category: 'occasion',
+    description: 'Ready for vacay? Learn smart packing tips for your tropical getaway! We are talking versatile outfits, space-saving hacks, and looking chic without the stress. Your ultimate guide!',
+    readTime: '9 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '🌴',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Versatile Flowy Maxi Dress', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3Mro3JB', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chic High-Waisted Bikini Set', brand: 'Amazon', price: '$48', url: 'https://amzn.to/40drBCf', tag: 'Vacay Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Comfy Strappy Flat Sandals', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3OrVpsf', tag: 'Travel Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Straw Sun Hat', brand: 'Amazon', price: '$28', url: 'https://amzn.to/4anggFT', tag: 'Glam Protection', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Lightweight Linen Blend Cover-Up', brand: 'Amazon', price: '$40', url: 'https://amzn.to/4qBF7dJ', tag: 'Beach Babe Pick', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
