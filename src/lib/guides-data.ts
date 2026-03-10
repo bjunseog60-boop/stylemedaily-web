@@ -448,6 +448,24 @@ export const guides: StyleGuide[] = [
       { name: 'Lightweight Linen Blend Cover-Up', brand: 'Amazon', price: '$40', url: 'https://amzn.to/4qBF7dJ', tag: 'Beach Babe Pick', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'discover-your-best-colors-color-seasons-guide-2026',
+    title: 'Discover Your Best Colors: The Ultimate Color Seasons Guide 2026',
+    category: 'body-type',
+    description: 'Unlock your most flattering shades with our easy color seasons guide! Find out if you are a warm spring, cool winter, and more. Look amazing!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Personal Color Analysis Draping Fabrics', brand: 'Amazon', price: '$75', url: 'https://amzn.to/4rVjOFg', tag: 'Best for Analysis', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'The Perfect Everyday Crewneck Tee', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3ZCaw4S', tag: 'Versatile Basic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Hydrating Lip Tint - Universal Shades', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3Mro3JB', tag: 'My Best Shade', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Gold Hoop Earrings Set', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3OhrhzW', tag: 'Warm Tone Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chic Silver Stud Earrings Trio', brand: 'Amazon', price: '$30', url: 'https://amzn.to/4anggFT', tag: 'Cool Tone Pick', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
