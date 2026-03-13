@@ -466,6 +466,24 @@ export const guides: StyleGuide[] = [
       { name: 'Chic Silver Stud Earrings Trio', brand: 'Amazon', price: '$30', url: 'https://amzn.to/4anggFT', tag: 'Cool Tone Pick', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-the-blazer-dress-for-any-occasion-2026',
+    title: 'Your Ultimate Guide to Styling the Blazer Dress for Any Occasion 2026',
+    category: 'occasion',
+    description: 'Master the blazer dress! Discover how to rock this chic piece for work, date night, or casual glam. Get versatile styling tips and outfit ideas for 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Blazer Dress', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'White Linen Blazer Dress', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3ZCaw4S', tag: 'Summer Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Plaid Oversized Blazer Dress', brand: 'Amazon', price: '$78', url: 'https://amzn.to/3Mro3JB', tag: 'Street Style Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Belted Power Blazer Dress', brand: 'Amazon', price: '$110', url: 'https://amzn.to/3OhrhzW', tag: 'Workwear Hero', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Statement Gold Chain Necklace', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT', tag: 'Accessory Essential', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
