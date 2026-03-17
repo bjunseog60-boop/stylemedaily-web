@@ -484,6 +484,24 @@ export const guides: StyleGuide[] = [
       { name: 'Statement Gold Chain Necklace', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT', tag: 'Accessory Essential', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'capsule-wardrobe-beginners-guide-2026',
+    title: 'Capsule Wardrobe for Beginners: Your Ultimate Guide to Effortless Style 2026',
+    category: 'budget',
+    description: 'Ready to simplify your style? Discover how to build a capsule wardrobe for beginners in 2026! Get practical tips for creating endless outfits with fewer clothes. #CapsuleWardrobe #StyleTips',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: '✨',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic White Crew Neck Tee', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB', tag: 'Foundation Piece', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waisted Dark Wash Jeans', brand: 'Amazon', price: '$60', url: 'https://amzn.to/40drBCf', tag: 'Everyday Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored Black Blazer', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3OrVpsf', tag: 'Versatile Layer', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Neutral Flat Ankle Boots', brand: 'Amazon', price: '$80', url: 'https://amzn.to/4anggFT', tag: 'Comfy & Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Silk Blend Patterned Scarf', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3Mro7cj', tag: 'Personality Pop', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
