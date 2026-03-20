@@ -502,6 +502,24 @@ export const guides: StyleGuide[] = [
       { name: 'Silk Blend Patterned Scarf', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3Mro7cj', tag: 'Personality Pop', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'trench-coat-styling-guide-2026',
+    title: 'Your Ultimate Guide to Styling a Trench Coat -- Chic Outfits for Every Season 2026',
+    category: 'seasonal',
+    description: 'Master the timeless trench coat! Learn how to style this classic piece for any season and occasion with our best friend-approved tips and outfit ideas for 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Beige Cotton Gabardine Trench', brand: 'Amazon', price: '$189', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Lightweight Spring Trench Coat', brand: 'Amazon', price: '$120', url: 'https://amzn.to/3ZCaw4S', tag: 'Spring Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Water-Resistant Modern Trench', brand: 'Amazon', price: '$210', url: 'https://amzn.to/3Mro3JB', tag: 'Durable Choice', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Stylish Black Faux Leather Trench', brand: 'Amazon', price: '$165', url: 'https://amzn.to/3OhrhzW', tag: 'Edgy Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Fashion Trench Coat', brand: 'Amazon', price: '$140', url: 'https://amzn.to/4anggFT', tag: 'Trending Style', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
