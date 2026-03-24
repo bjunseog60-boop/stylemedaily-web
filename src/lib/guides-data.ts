@@ -520,6 +520,24 @@ export const guides: StyleGuide[] = [
       { name: 'Oversized Fashion Trench Coat', brand: 'Amazon', price: '$140', url: 'https://amzn.to/4anggFT', tag: 'Trending Style', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'leather-jacket-outfits-styling-guide-2026',
+    title: 'Your Ultimate Guide to Styling a Leather Jacket -- 20+ Outfit Ideas for 2026',
+    category: 'casual',
+    description: 'Unlock endless style! Your leather jacket is a wardrobe MVP. Discover casual, dressy, and smart ways to rock it all year. Get fresh outfit ideas for 2026!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$189', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Distressed Brown Faux Leather Jacket', brand: 'Amazon', price: '$75', url: 'https://amzn.to/3ZCaw4S', tag: 'Budget Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored Faux Leather Blazer', brand: 'Amazon', price: '$110', url: 'https://amzn.to/3Mro3JB', tag: 'Workwear Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Vegan Leather Jacket', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3OhrhzW', tag: 'Trending Style', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Faux Leather Jacket', brand: 'Amazon', price: '$130', url: 'https://amzn.to/4anggFT', tag: 'Casual Cool', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
