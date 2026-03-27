@@ -538,6 +538,24 @@ export const guides: StyleGuide[] = [
       { name: 'Oversized Faux Leather Jacket', brand: 'Amazon', price: '$130', url: 'https://amzn.to/4anggFT', tag: 'Casual Cool', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'your-ultimate-maxi-dress-style-guide-2026',
+    title: 'Your Ultimate Maxi Dress Style Guide: Rock Every Occasion 2026',
+    category: 'seasonal',
+    description: 'Unlock your maxi dress potential! Learn how to style this versatile wardrobe hero for casual days, work, and special events. Your comfy-chic guide!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '👗',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'The Everyday Flowy Maxi Dress', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Boho Printed Tiered Maxi Dress', brand: 'Amazon', price: '$68', url: 'https://amzn.to/3ZCaw4S', tag: 'Casual Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Satin Slip Maxi Dress', brand: 'Amazon', price: '$90', url: 'https://amzn.to/3Mro3JB', tag: 'Dress Up Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Light Wash Denim Jacket', brand: 'Amazon', price: '$75', url: 'https://amzn.to/3OhrhzW', tag: 'Layering Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Comfy Platform Sandals', brand: 'Amazon', price: '$40', url: 'https://amzn.to/4anggFT', tag: 'Everyday Footwear', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
