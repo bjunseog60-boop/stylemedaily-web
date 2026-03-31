@@ -556,6 +556,24 @@ export const guides: StyleGuide[] = [
       { name: 'Comfy Platform Sandals', brand: 'Amazon', price: '$40', url: 'https://amzn.to/4anggFT', tag: 'Everyday Footwear', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'maxi-dress-styling-for-every-occasion-2026',
+    title: 'Your Ultimate Maxi Dress Style Guide: How to Rock Them for Any Occasion 2026',
+    category: 'occasion',
+    description: 'Master the art of maxi dress styling! Learn how to wear your favorite long dresses for casual days, date nights, and even work. Get comfy, chic tips here!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Everyday Jersey Maxi Dress', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4rVjOFg', tag: 'Comfy Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Floral Print Tiered Maxi Dress', brand: 'Amazon', price: '$78', url: 'https://amzn.to/3Mro3JB', tag: 'Weekend Vibe', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Satin Slip Maxi Dress', brand: 'Amazon', price: '$99', url: 'https://amzn.to/4anggFT', tag: 'Date Night Dream', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Denim Jacket', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4tH7kT9', tag: 'Layering Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Block Heel Strappy Sandals', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4kNVNxy', tag: 'Versatile Heels', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
