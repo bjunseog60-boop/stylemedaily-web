@@ -574,6 +574,24 @@ export const guides: StyleGuide[] = [
       { name: 'Block Heel Strappy Sandals', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4kNVNxy', tag: 'Versatile Heels', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-a-leather-jacket-for-any-occasion-2026',
+    title: 'Your Ultimate Guide: How to Style a Leather Jacket for Any Occasion 2026',
+    category: 'casual',
+    description: 'Level up your wardrobe with a leather jacket! Discover how to style this closet hero for casual days, date nights, and everything in between. Your ultimate guide for 2026!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '😎',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$120', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/3Mro3JB', tag: 'Workwear Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Burgundy Cropped Leather Jacket', brand: 'Amazon', price: '$95', url: 'https://amzn.to/4rfVnSQ', tag: 'Date Night Steal', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Vegan Leather Jacket', brand: 'Amazon', price: '$110', url: 'https://amzn.to/4kNVNxy', tag: 'Comfy & Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Vintage-Look Brown Leather Jacket', brand: 'Amazon', price: '$135', url: 'https://amzn.to/3OrVpsf', tag: 'Timeless Essential', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
