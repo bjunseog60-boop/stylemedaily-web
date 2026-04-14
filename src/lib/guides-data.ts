@@ -592,6 +592,24 @@ export const guides: StyleGuide[] = [
       { name: 'Vintage-Look Brown Leather Jacket', brand: 'Amazon', price: '$135', url: 'https://amzn.to/3OrVpsf', tag: 'Timeless Essential', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'linen-fashion-ultimate-guide-2026',
+    title: 'Your Ultimate Guide to Linen Fashion: Chic & Comfy for 2026',
+    category: 'seasonal',
+    description: 'Love linen but not sure how to wear it? Get ready for your best summer yet! This guide shows you how to rock linen for any occasion, from casual to chic. Comfy and stylish!',
+    readTime: '10 min',
+    date: '2026-03-05',
+    tag: 'Guide',
+    emoji: '🌿',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Everyday Linen Wide-Leg Pants', brand: 'Amazon', price: '$59', url: 'https://amzn.to/3OhrhzW', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Effortless Midi Shirt Dress', brand: 'Amazon', price: '$85', url: 'https://amzn.to/40drBCf', tag: 'Versatile Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Linen Button-Down', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3ZCaw4S', tag: 'Wardrobe Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Comfy Linen Blend Shorts', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4tEIRhl', tag: 'Casual Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chic Linen Blend Tote', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4tH7kT9', tag: 'Accessory Love', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
