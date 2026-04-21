@@ -610,6 +610,24 @@ export const guides: StyleGuide[] = [
       { name: 'Chic Linen Blend Tote', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4tH7kT9', tag: 'Accessory Love', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'leather-jacket-outfits-ultimate-guide-2026',
+    title: 'Your Ultimate Guide to Styling a Leather Jacket -- Edge, Chic, & Totally You! 2026',
+    category: 'casual',
+    description: 'Unlock your leather jacket\'s full potential! Learn how to style this iconic piece for any occasion--from casual cool to chic date nights. Get outfit ideas & expert tips. 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$189', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Vegan Leather Cropped Jacket', brand: 'Amazon', price: '$75', url: 'https://amzn.to/3OhrhzW', tag: 'Budget Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Boyfriend Leather Blazer', brand: 'Amazon', price: '$220', url: 'https://amzn.to/40drBCf', tag: 'Trendy Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Burgundy Statement Leather Jacket', brand: 'Amazon', price: '$195', url: 'https://amzn.to/4tEIRhl', tag: 'Statement Piece', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Quilted Faux Leather Jacket', brand: 'Amazon', price: '$150', url: 'https://amzn.to/4rUPDhk', tag: 'Elevated Classic', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
