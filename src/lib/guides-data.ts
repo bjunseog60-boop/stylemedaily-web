@@ -628,6 +628,24 @@ export const guides: StyleGuide[] = [
       { name: 'Quilted Faux Leather Jacket', brand: 'Amazon', price: '$150', url: 'https://amzn.to/4rUPDhk', tag: 'Elevated Classic', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-maxi-dresses-every-occasion-2026',
+    title: 'Your Ultimate Guide to Styling Maxi Dresses for Every Occasion 2026',
+    category: 'occasion',
+    description: 'Master maxi dress styling! Learn how to rock your favorite long dresses from beach to brunch to evening -- totally versatile & chic.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '👗',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'The Everyday Comfort Maxi', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Everyday', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chic Tailored Blazer', brand: 'Amazon', price: '$89', url: 'https://amzn.to/3OhrhzW', tag: 'Office Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Strappy Block Heel Sandals', brand: 'Amazon', price: '$70', url: 'https://amzn.to/4tH7kT9', tag: 'Versatile Heels', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Statement Pendant Necklace', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj', tag: 'Glam Touch', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Denim Jacket', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3OrVpsf', tag: 'Casual Layer', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
