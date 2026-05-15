@@ -646,6 +646,23 @@ export const guides: StyleGuide[] = [
       { name: 'Classic Denim Jacket', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3OrVpsf', tag: 'Casual Layer', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'the-leather-jacket-your-style-secret-weapon-2026',
+    title: 'The Leather Jacket -- Your Style Secret Weapon: How to Wear it Everywhere 2026',
+    category: 'casual',
+    description: 'Unlock the power of your leather jacket! Discover easy, stylish outfits for every occasion -- from brunch to date night. Your must-have guide for 2026!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$129', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/3OhrhzW', tag: 'Dress It Up', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Leather Jacket', brand: 'Amazon', price: '$110', url: 'https://amzn.to/4tH7kT9', tag: 'Petite Friendly', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Brown Leather Jacket', brand: 'Amazon', price: '$140', url: 'https://amzn.to/3Mro7cj', tag: 'Trendy Pick', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
