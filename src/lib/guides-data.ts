@@ -663,6 +663,23 @@ export const guides: StyleGuide[] = [
       { name: 'Oversized Brown Leather Jacket', brand: 'Amazon', price: '$140', url: 'https://amzn.to/3Mro7cj', tag: 'Trendy Pick', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'leather-jacket-outfits-year-round-guide-2026',
+    title: 'Your Ultimate Guide to Styling a Leather Jacket -- A Year-Round Essential 2026',
+    category: 'casual',
+    description: 'Unlock endless style with our leather jacket guide! Discover how to rock this versatile piece for any occasion, all year long. Your closet\'s new best friend!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$129', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Soft Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/3OhrhzW', tag: 'Elevated Casual', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Vegan Leather Jacket', brand: 'Amazon', price: '$95', url: 'https://amzn.to/40drBCf', tag: 'Trendy Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Distressed Brown Leather Jacket', brand: 'Amazon', price: '$140', url: 'https://amzn.to/4tEIRhl', tag: 'Boho Chic', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
