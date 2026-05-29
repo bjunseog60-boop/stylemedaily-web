@@ -680,6 +680,24 @@ export const guides: StyleGuide[] = [
       { name: 'Distressed Brown Leather Jacket', brand: 'Amazon', price: '$140', url: 'https://amzn.to/4tEIRhl', tag: 'Boho Chic', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-maxi-dresses-all-year-round-2026',
+    title: 'Your Ultimate Maxi Dress Styling Guide: Rock Them All Year Round 2026',
+    category: 'seasonal',
+    description: 'Unlock the secrets to styling your maxi dresses for any season and occasion! From casual days to chic evenings, make your maxi dress a versatile wardrobe hero.',
+    readTime: '8 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '👗',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Denim Jacket', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4rVjOFg', tag: 'Layering Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Strappy Block Heel Sandals', brand: 'Amazon', price: '$80', url: 'https://amzn.to/3ZCaw4S', tag: 'Summer Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Woven Faux Leather Belt', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3Mro3JB', tag: 'Cinch Your Look', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chunky Knit Cardigan', brand: 'Amazon', price: '$75', url: 'https://amzn.to/3OhrhzW', tag: 'Fall Coziness', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Ankle Boots with Low Heel', brand: 'Amazon', price: '$95', url: 'https://amzn.to/4anggFT', tag: 'Winter Chic', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
