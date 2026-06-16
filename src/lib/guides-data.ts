@@ -698,6 +698,24 @@ export const guides: StyleGuide[] = [
       { name: 'Ankle Boots with Low Heel', brand: 'Amazon', price: '$95', url: 'https://amzn.to/4anggFT', tag: 'Winter Chic', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'summer-linen-outfits-your-ultimate-guide-2026',
+    title: 'Your Ultimate Guide to Chic Summer Linen Outfits -- Stay Cool & Stylish 2026',
+    category: 'seasonal',
+    description: 'Beat the heat in style! Discover how to rock linen outfits this summer. From breezy dresses to tailored pants, get your best friend\'s tips for a cool, chic look.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: '☀️',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Breezy Linen Blend Maxi Dress', brand: 'Amazon', price: '$78', url: 'https://amzn.to/3OhrhzW', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waisted Wide-Leg Linen Pants', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4kNVNxy', tag: 'Versatile Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Oversized Linen Button-Up', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3ZCaw4S', tag: 'Wardrobe Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Shorts and Vest Set', brand: 'Amazon', price: '$69', url: 'https://amzn.to/4rUPDhk', tag: 'Comfy Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Espadrille Wedge Sandals', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4rfVnSQ', tag: 'Perfect Pairing', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
