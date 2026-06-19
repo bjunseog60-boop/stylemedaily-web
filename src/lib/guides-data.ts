@@ -716,6 +716,24 @@ export const guides: StyleGuide[] = [
       { name: 'Espadrille Wedge Sandals', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4rfVnSQ', tag: 'Perfect Pairing', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-rock-maxi-dresses-all-year-round-2026',
+    title: 'How to Rock Maxi Dresses: Your Ultimate Guide for Every Season (2026)',
+    category: 'seasonal',
+    description: 'Your go-to guide for styling maxi dresses! Learn how to rock these versatile pieces for every season and occasion. Practical tips & outfit ideas inside. #MaxiDress #FashionTips',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '👗',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy Floral Maxi Dress', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3Mro3JB', tag: 'Summer Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Ribbed Knit Maxi Dress', brand: 'Amazon', price: '$50', url: 'https://amzn.to/4anggFT', tag: 'Transitional Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Denim Jacket', brand: 'Amazon', price: '$78', url: 'https://amzn.to/40drBCf', tag: 'Versatile Layer', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Stacked Heel Espadrille Sandals', brand: 'Amazon', price: '$90', url: 'https://amzn.to/3Mro7cj', tag: 'Perfect Pair', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Woven Straw Tote Bag', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OrVpsf', tag: 'Weekend Vibe', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
