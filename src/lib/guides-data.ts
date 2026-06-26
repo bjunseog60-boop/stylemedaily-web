@@ -734,6 +734,24 @@ export const guides: StyleGuide[] = [
       { name: 'Woven Straw Tote Bag', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OrVpsf', tag: 'Weekend Vibe', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'midi-skirt-outfits-for-every-occasion-2026',
+    title: 'How to Style Midi Skirts for Any Occasion: Your Ultimate Guide 2026',
+    category: 'occasion',
+    description: 'Unlock the magic of midi skirts! Learn how to style this versatile piece for casual days, work, or date nights. Your best friend\'s guide to midi skirt outfits. #MidiSkirt #FashionTips',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Pleated Midi Skirt', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4rVjOFg', tag: 'Versatile Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Silky Slip Midi Skirt', brand: 'Amazon', price: '$50', url: 'https://amzn.to/3ZCaw4S', tag: 'Date Night Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waisted Denim Midi Skirt', brand: 'Amazon', price: '$70', url: 'https://amzn.to/3Mro3JB', tag: 'Casual Favorite', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Knit Ribbed Midi Skirt', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OhrhzW', tag: 'Comfy Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Textured A-Line Midi Skirt', brand: 'Amazon', price: '$75', url: 'https://amzn.to/4anggFT', tag: 'Workwear Hero', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
