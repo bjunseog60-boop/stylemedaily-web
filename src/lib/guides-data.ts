@@ -752,6 +752,24 @@ export const guides: StyleGuide[] = [
       { name: 'Textured A-Line Midi Skirt', brand: 'Amazon', price: '$75', url: 'https://amzn.to/4anggFT', tag: 'Workwear Hero', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'leather-jacket-outfits-your-ultimate-styling-guide-2026',
+    title: 'Leather Jacket Outfits: Your Ultimate Styling Guide for Every Vibe 2026',
+    category: 'casual',
+    description: 'Unlock your leather jacket\'s full potential! Learn how to style this closet hero for casual days, date nights, and beyond. Your go-to guide for 2026 fashion.',
+    readTime: '10 min',
+    date: '2026-03-10',
+    tag: 'Guide',
+    emoji: '🧥',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Leather Jacket', brand: 'Amazon', price: '$299', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/3ZCaw4S', tag: 'Budget Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Rich Brown Leather Bomber Jacket', brand: 'Amazon', price: '$350', url: 'https://amzn.to/3Mro3JB', tag: 'Elevated Style', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Leather Conditioner and Protector Kit', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3OhrhzW', tag: 'Must-Have Care', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waisted Straight Leg Jeans', brand: 'Amazon', price: '$70', url: 'https://amzn.to/4anggFT', tag: 'Perfect Pairing', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
