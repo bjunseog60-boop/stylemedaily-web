@@ -770,6 +770,24 @@ export const guides: StyleGuide[] = [
       { name: 'High-Waisted Straight Leg Jeans', brand: 'Amazon', price: '$70', url: 'https://amzn.to/4anggFT', tag: 'Perfect Pairing', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'mastering-everyday-boho-chic-style-2026',
+    title: 'Your Ultimate Guide to Effortless Boho Chic Style -- 2026 Edition',
+    category: 'casual',
+    description: 'Channel your inner free spirit with our ultimate boho chic guide! Learn to style flowy dresses, fringe, and earthy tones for a super stylish, comfy look. Get inspired now!',
+    readTime: '10 min',
+    date: '2026-03-05',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy Embroidered Maxi Dress', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3Mro3JB', tag: 'Must-Have Dress', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Fringe Suede Crossbody Bag', brand: 'Amazon', price: '$48', url: 'https://amzn.to/40drBCf', tag: 'Accessorize Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Peasant Blouse with Bell Sleeves', brand: 'Amazon', price: '$39', url: 'https://amzn.to/3ZCaw4S', tag: 'Everyday Top', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Layered Gold & Stone Necklace Set', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro7cj', tag: 'Jewelry Stack', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Comfortable Suede Ankle Boots', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4tH7kT9', tag: 'Boho Footwear', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
