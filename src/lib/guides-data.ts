@@ -788,6 +788,24 @@ export const guides: StyleGuide[] = [
       { name: 'Comfortable Suede Ankle Boots', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4tH7kT9', tag: 'Boho Footwear', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-a-slip-dress-for-any-occasion-2026',
+    title: 'Your Ultimate Guide to Styling a Slip Dress: From Casual Chic to Date Night Glam 2026',
+    category: 'occasion',
+    description: 'Unlock the power of the slip dress! Learn how to wear this versatile piece for any event--casual, work, or date night. Your style bestie has all the tips! #slipdress #fashionguide',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '👗',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Silk Slip Dress', brand: 'Amazon', price: '$98', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'White Cropped Crew Neck Tee', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3OhrhzW', tag: 'Layering Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Charcoal Blazer', brand: 'Amazon', price: '$120', url: 'https://amzn.to/4rfVnSQ', tag: 'Versatile Layer', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Nude Strappy Block Heels', brand: 'Amazon', price: '$75', url: 'https://amzn.to/40drBCf', tag: 'Date Night Ready', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic White Leather Sneakers', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3Mro7cj', tag: 'Casual Cool', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
