@@ -806,6 +806,24 @@ export const guides: StyleGuide[] = [
       { name: 'Classic White Leather Sneakers', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3Mro7cj', tag: 'Casual Cool', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-a-leather-jacket-any-occasion-2026',
+    title: 'Your Ultimate Guide to Styling a Leather Jacket -- Any Occasion, Any Vibe 2026',
+    category: 'casual',
+    description: 'Unlock the power of your leather jacket! Discover easy, stylish ways to wear this wardrobe staple for every mood and occasion. Casual, chic, or edgy -- we got you! 🔥',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: '🔥',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$189', url: 'https://amzn.to/3Mro3JB', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Faux Leather Blazer', brand: 'Amazon', price: '$75', url: 'https://amzn.to/4rfVnSQ', tag: 'Workwear Hero', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Vegan Leather Shacket', brand: 'Amazon', price: '$60', url: 'https://amzn.to/4kNVNxy', tag: 'Cozy & Cool', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waisted Dark Wash Jeans', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OrVpsf', tag: 'Perfect Pair', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Ribbed Knit Turtleneck', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4tH7kT9', tag: 'Layering Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
