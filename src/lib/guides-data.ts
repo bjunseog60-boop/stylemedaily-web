@@ -824,6 +824,24 @@ export const guides: StyleGuide[] = [
       { name: 'Ribbed Knit Turtleneck', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4tH7kT9', tag: 'Layering Must-Have', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'linen-lovers-guide-stylish-and-breezy-outfits-2026',
+    title: 'Your Ultimate Guide to Linen Fashion: Stay Cool & Chic All Year Round 2026',
+    category: 'seasonal',
+    description: 'Love linen? Discover how to style linen clothes for effortless, breathable, and chic looks. Your breezy fashion guide for comfort and style in 2026!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: '☀️',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Relaxed Fit Linen Trousers', brand: 'Amazon', price: '$59', url: 'https://amzn.to/3Mro3JB', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Linen Button-Down Shirt', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4tH7kT9', tag: 'Wardrobe Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'A-Line Linen Midi Dress', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4tEIRhl', tag: 'Effortless Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Blend Tailored Blazer', brand: 'Amazon', price: '$89', url: 'https://amzn.to/3ZCaw4S', tag: 'Smart Casual', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Espadrille Platform Sandals', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4tH7kT9', tag: 'Summer Essential', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
