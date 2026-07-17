@@ -842,6 +842,24 @@ export const guides: StyleGuide[] = [
       { name: 'Linen Espadrille Platform Sandals', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4tH7kT9', tag: 'Summer Essential', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-midi-skirts-for-every-occasion-2026',
+    title: 'Your Ultimate Guide to Styling Midi Skirts -- Chic Looks for Every Occasion 2026',
+    category: 'occasion',
+    description: 'Obsessed with midi skirts but not sure how to wear them? Your bestie is here! Learn to style midi skirts for work, casual days, and nights out. So chic! #midiskirt #styleguide',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy A-Line Midi Skirt', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Ribbed Knit Tank Top', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3ZCaw4S', tag: 'Versatile Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Block Heel Sandals', brand: 'Amazon', price: '$70', url: 'https://amzn.to/3Mro3JB', tag: 'Comfy & Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored Cropped Blazer', brand: 'Amazon', price: '$89', url: 'https://amzn.to/3OhrhzW', tag: 'Smart Layering', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Satin Slip Midi Skirt', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4anggFT', tag: 'Dressy Pick', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
