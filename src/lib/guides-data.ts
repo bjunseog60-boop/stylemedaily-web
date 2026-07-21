@@ -860,6 +860,24 @@ export const guides: StyleGuide[] = [
       { name: 'Satin Slip Midi Skirt', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4anggFT', tag: 'Dressy Pick', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'boho-chic-style-guide-embrace-free-spirit-2026',
+    title: 'Your Ultimate Boho Chic Style Guide: Embrace Free-Spirited Fashion 2026',
+    category: 'casual',
+    description: 'Unlock your inner free spirit with our ultimate boho chic style guide! Learn how to rock flowy dresses, fringe, and earthy tones for effortless, stylish looks in 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Floral Maxi Dress', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4rVjOFg', tag: 'Boho Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Fringe Suede Crossbody Bag', brand: 'Amazon', price: '$48', url: 'https://amzn.to/4rfVnSQ', tag: 'Accessory Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Embroidered Peasant Blouse', brand: 'Amazon', price: '$39', url: 'https://amzn.to/3Mro3JB', tag: 'Versatile Top', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Wide-Brim Felt Hat', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3Mro7cj', tag: 'Styling Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Stacked Turquoise Bracelet Set', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3OrVpsf', tag: 'Jewelry Pick', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
