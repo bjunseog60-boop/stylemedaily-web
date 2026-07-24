@@ -878,6 +878,23 @@ export const guides: StyleGuide[] = [
       { name: 'Stacked Turquoise Bracelet Set', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3OrVpsf', tag: 'Jewelry Pick', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'leather-jacket-outfits-ultimate-style-guide-2026',
+    title: 'Your Ultimate Leather Jacket Style Guide: 20 Chic Outfits for 2026',
+    category: 'casual',
+    description: 'Unlock the power of your leather jacket! Get 20+ chic outfit ideas for any occasion in 2026. Your ultimate guide to styling this timeless staple like a pro.',
+    readTime: '8 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '🖤',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$120', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Elevated Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/3ZCaw4S', tag: 'Office Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Vegan Leather Jacket', brand: 'Amazon', price: '$70', url: 'https://amzn.to/3Mro3JB', tag: 'Date Night Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cozy Oversized Leather Bomber', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3OhrhzW', tag: 'Comfy & Cool', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
