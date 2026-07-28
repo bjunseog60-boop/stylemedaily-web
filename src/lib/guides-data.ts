@@ -895,6 +895,24 @@ export const guides: StyleGuide[] = [
       { name: 'Cozy Oversized Leather Bomber', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3OhrhzW', tag: 'Comfy & Cool', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-the-denim-jacket-2026',
+    title: 'Your Ultimate Guide: How to Style a Denim Jacket for Every Occasion in 2026',
+    category: 'casual',
+    description: 'Unlock the power of your denim jacket! Learn to style this wardrobe essential for casual days, date nights, and more. Your best friend guide for ultimate versatility. 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Blue Denim Jacket', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3Mro3JB', tag: 'Wardrobe Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Light Wash Denim Jacket', brand: 'Amazon', price: '$75', url: 'https://amzn.to/4rfVnSQ', tag: 'On-Trend Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Black Distressed Denim Jacket', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4kNVNxy', tag: 'Edgy Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'White Cropped Denim Jacket', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OrVpsf', tag: 'Summer Perfect', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Embellished Denim Jacket', brand: 'Amazon', price: '$80', url: 'https://amzn.to/4tH7kT9', tag: 'Statement Piece', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
