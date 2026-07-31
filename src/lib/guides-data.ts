@@ -913,6 +913,24 @@ export const guides: StyleGuide[] = [
       { name: 'Embellished Denim Jacket', brand: 'Amazon', price: '$80', url: 'https://amzn.to/4tH7kT9', tag: 'Statement Piece', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-maxi-dresses-like-a-pro-2026',
+    title: 'How To Style Maxi Dresses Like a Pro -- Your Ultimate Guide 2026',
+    category: 'occasion',
+    description: 'Unlock the secrets to styling maxi dresses for any event! From casual days to chic evenings, this guide has all the tips you need to look fabulous and feel comfy. Maxi dress outfits decoded!',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '👗',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Comfy Cotton Everyday Maxi', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3Mro3JB', tag: 'Everyday Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Flowy Floral Date Night Maxi', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4rfVnSQ', tag: 'Romantic Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Sleek Jersey Workwear Maxi', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4kNVNxy', tag: 'Workwear Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Elegant Satin Evening Maxi', brand: 'Amazon', price: '$120', url: 'https://amzn.to/3OrVpsf', tag: 'Evening Glam', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Versatile Light Wash Denim Jacket', brand: 'Amazon', price: '$70', url: 'https://amzn.to/4tH7kT9', tag: 'Styling MVP', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
