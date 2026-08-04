@@ -931,6 +931,24 @@ export const guides: StyleGuide[] = [
       { name: 'Versatile Light Wash Denim Jacket', brand: 'Amazon', price: '$70', url: 'https://amzn.to/4tH7kT9', tag: 'Styling MVP', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-rock-palazzo-pants-like-a-pro-2026',
+    title: 'How to Rock Palazzo Pants Like a Pro -- Your Ultimate Style Guide 2026',
+    category: 'casual',
+    description: 'Learn how to style palazzo pants for any occasion! This ultimate guide gives you easy tips to look chic and comfy in wide-leg pants. Palazzo styling made simple for 2026.',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy High-Waist Palazzo Pants', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Silk Blend Printed Palazzo Pants', brand: 'Amazon', price: '$68', url: 'https://amzn.to/3Mro3JB', tag: 'Best for Dressing Up', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Cotton Basic Tee', brand: 'Amazon', price: '$20', url: 'https://amzn.to/4rfVnSQ', tag: 'Perfect Pairing', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Comfortable White Trainers', brand: 'Amazon', price: '$75', url: 'https://amzn.to/4kNVNxy', tag: 'Everyday Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Elegant Block Heel Sandals', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OrVpsf', tag: 'Dress Up Shoes', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
