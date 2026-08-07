@@ -949,6 +949,24 @@ export const guides: StyleGuide[] = [
       { name: 'Elegant Block Heel Sandals', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OrVpsf', tag: 'Dress Up Shoes', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'work-from-home-chic-comfy-style-guide-2026',
+    title: 'Your Ultimate Work From Home Style Guide -- Chic & Comfy WFH Outfits 2026',
+    category: 'casual',
+    description: 'Master work from home style! Discover chic, comfy WFH outfits that nail productivity and comfort. Feel good & look great on Zoom calls in 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '💻',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Luxe Knit Joggers', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3Mro3JB', tag: 'Best for Comfort', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Soft Ribbed Cardigan', brand: 'Amazon', price: '$50', url: 'https://amzn.to/4rfVnSQ', tag: 'Zoom Call Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Silky Button-Up Blouse', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4kNVNxy', tag: 'Elevated Top', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Plush Faux Fur Slippers', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3OrVpsf', tag: 'Cozy Footwear', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Stylish Scrunchie Headband Set', brand: 'Amazon', price: '$20', url: 'https://amzn.to/4tH7kT9', tag: 'Quick Polish', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
