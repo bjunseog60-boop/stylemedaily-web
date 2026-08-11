@@ -967,6 +967,24 @@ export const guides: StyleGuide[] = [
       { name: 'Stylish Scrunchie Headband Set', brand: 'Amazon', price: '$20', url: 'https://amzn.to/4tH7kT9', tag: 'Quick Polish', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-your-leather-jacket-for-any-vibe-2026',
+    title: 'Your Ultimate Guide to Styling a Leather Jacket -- Any Vibe, Any Day! 2026',
+    category: 'casual',
+    description: 'Unlock endless outfits with your leather jacket! From edgy to chic, get practical tips and outfit ideas to rock your leather jacket with confidence in 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$120', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/3Mro3JB', tag: 'Chic Alternative', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Leather Jacket', brand: 'Amazon', price: '$95', url: 'https://amzn.to/4anggFT', tag: 'Trend Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Brown Suede Biker Jacket', brand: 'Amazon', price: '$150', url: 'https://amzn.to/4tH7kT9', tag: 'Boho Vibe', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Leather Bomber', brand: 'Amazon', price: '$110', url: 'https://amzn.to/4kNVNxy', tag: 'Casual Cool', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
