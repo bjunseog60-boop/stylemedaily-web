@@ -985,6 +985,23 @@ export const guides: StyleGuide[] = [
       { name: 'Oversized Leather Bomber', brand: 'Amazon', price: '$110', url: 'https://amzn.to/4kNVNxy', tag: 'Casual Cool', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'mastering-linen-style-your-ultimate-guide-2026',
+    title: 'Mastering Linen Style: Your Ultimate Guide to Effortless Chic in 2026',
+    category: 'seasonal',
+    description: 'Unlock the secrets to styling linen like a pro! Discover essential pieces, care tips, and outfit ideas for looking effortlessly chic and comfy all year long. Get ready for breezy style in 2026.',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy Linen Wide-Leg Pants', brand: 'Amazon', price: '$59', url: 'https://amzn.to/40drBCf', tag: 'Best for Comfort', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic White Linen Button-Down Shirt', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OrVpsf', tag: 'Everyday Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Blend Midi Dress', brand: 'Amazon', price: '$68', url: 'https://amzn.to/3Mro3JB', tag: 'Versatile Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Blend Tailored Shorts', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3Mro7cj', tag: 'Chic & Cool', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
