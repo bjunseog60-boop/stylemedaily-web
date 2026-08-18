@@ -1002,6 +1002,24 @@ export const guides: StyleGuide[] = [
       { name: 'Linen Blend Tailored Shorts', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3Mro7cj', tag: 'Chic & Cool', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'effortless-linen-style-guide-2026',
+    title: 'Your Guide to Effortless Linen Style -- Look Cool, Feel Comfy All Year 2026',
+    category: 'seasonal',
+    description: 'Discover how to style linen clothes for any occasion! This guide shows you how to rock breathable, chic linen from work to weekend. Stay cool and fashionable!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Linen Blend Wide-Leg Pants', brand: 'Amazon', price: '$68', url: 'https://amzn.to/3OhrhzW', tag: 'Best for Comfort', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Linen Button-Down Shirt', brand: 'Amazon', price: '$55', url: 'https://amzn.to/40drBCf', tag: 'Versatile Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Relaxed Fit Linen Midi Dress', brand: 'Amazon', price: '$89', url: 'https://amzn.to/3OrVpsf', tag: 'Effortless Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored Linen Blazer', brand: 'Amazon', price: '$120', url: 'https://amzn.to/3ZCaw4S', tag: 'Workwear Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waisted Linen Shorts', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj', tag: 'Weekend Perfect', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
