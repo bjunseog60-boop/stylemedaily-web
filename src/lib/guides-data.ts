@@ -1020,6 +1020,24 @@ export const guides: StyleGuide[] = [
       { name: 'High-Waisted Linen Shorts', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj', tag: 'Weekend Perfect', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-a-leather-jacket-2026',
+    title: 'Your Ultimate Guide to Styling a Leather Jacket (Any Occasion!) 2026',
+    category: 'casual',
+    description: 'Unlock the secret to styling your leather jacket like a pro! From casual cool to date night chic, discover fresh outfit ideas for any occasion. Your best friend style guide for 2026.',
+    readTime: '8 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '🧥',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'The Classic Moto Jacket', brand: 'Amazon', price: '$189', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Faux Leather Cropped Jacket', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3ZCaw4S', tag: 'Budget Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Vintage-Inspired Jacket', brand: 'Amazon', price: '$220', url: 'https://amzn.to/3Mro3JB', tag: 'Trend Alert', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Vegan Leather Blazer', brand: 'Amazon', price: '$98', url: 'https://amzn.to/3OhrhzW', tag: 'Workwear Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Leather Care Kit', brand: 'Amazon', price: '$25', url: 'https://amzn.to/4anggFT', tag: 'Must-Have Accessory', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
