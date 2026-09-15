@@ -1038,6 +1038,24 @@ export const guides: StyleGuide[] = [
       { name: 'Leather Care Kit', brand: 'Amazon', price: '$25', url: 'https://amzn.to/4anggFT', tag: 'Must-Have Accessory', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'the-ultimate-linen-style-guide-2026',
+    title: 'The Ultimate Linen Style Guide 2026: Stay Cool & Chic All Season',
+    category: 'seasonal',
+    description: 'Beat the heat in style! Discover how to rock linen this season with our ultimate guide to comfortable, chic outfits. Get ready for breezy fashion! ☀️',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy Wide-Leg Linen Trousers', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Oversized Linen Shirt', brand: 'Amazon', price: '$48', url: 'https://amzn.to/3ZCaw4S', tag: 'Versatile Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Effortless Linen Midi Dress', brand: 'Amazon', price: '$79', url: 'https://amzn.to/3Mro3JB', tag: 'Summer Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored Linen Blend Shorts', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3OhrhzW', tag: 'Budget Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chic Linen Blazer', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4anggFT', tag: 'Smart Casual Hero', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
