@@ -1056,6 +1056,24 @@ export const guides: StyleGuide[] = [
       { name: 'Chic Linen Blazer', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4anggFT', tag: 'Smart Casual Hero', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'linen-fashion-summer-style-guide-2026',
+    title: 'Your Ultimate Guide to Chic Linen Outfits for Summer 2026',
+    category: 'seasonal',
+    description: 'Unlock effortless summer style! This guide shows you how to wear linen from day to night, stay cool, and look amazing. Get ready to embrace linen!',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'High-Waisted Wide-Leg Linen Pants', brand: 'Amazon', price: '$68', url: 'https://amzn.to/4rfVnSQ', tag: 'Must-Have Bottom', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Oversized Linen Button-Down Shirt', brand: 'Amazon', price: '$55', url: 'https://amzn.to/40drBCf', tag: 'Versatile Top', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Blend Midi Sundress', brand: 'Amazon', price: '$79', url: 'https://amzn.to/3Mro7cj', tag: 'Effortless Dress', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored Linen Blazer', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3OrVpsf', tag: 'Chic Layer', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Relaxed Fit Linen Shorts', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4qBF7dJ', tag: 'Casual Essential', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
