@@ -1074,6 +1074,24 @@ export const guides: StyleGuide[] = [
       { name: 'Relaxed Fit Linen Shorts', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4qBF7dJ', tag: 'Casual Essential', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-maxi-dresses-year-round-2026',
+    title: 'Your Ultimate Guide: How To Style Maxi Dresses For Every Season 2026',
+    category: 'seasonal',
+    description: 'Maxi dresses are a closet hero! Learn how to style your favorite long dresses for any season -- from beach days to winter nights. Get ready for comfy chic!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy Floral Summer Maxi Dress', brand: 'Amazon', price: '$59', url: 'https://amzn.to/4rVjOFg', tag: 'Spring/Summer Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Denim Jacket', brand: 'Amazon', price: '$75', url: 'https://amzn.to/3OhrhzW', tag: 'Versatile Layer', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Ribbed Knit Maxi Dress', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4tH7kT9', tag: 'Fall/Winter Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Suede Ankle Boots', brand: 'Amazon', price: '$120', url: 'https://amzn.to/3Mro7cj', tag: 'Cool Weather Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Woven Statement Belt', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4rUPDhk', tag: 'Accessorize Anything', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
