@@ -1110,6 +1110,24 @@ export const guides: StyleGuide[] = [
       { name: 'Oversized Leather Bomber Jacket', brand: 'Amazon', price: '$130', url: 'https://amzn.to/4tH7kT9', tag: 'Casual Chic', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'leather-jacket-outfits-for-every-vibe-2026',
+    title: 'Your Ultimate Guide to Styling a Leather Jacket -- Any Vibe, Any Day 2026',
+    category: 'casual',
+    description: 'Unlock your leather jacket\'s full potential! Learn how to style this closet essential for endless looks--from edgy to chic. Your go-to guide for 2026!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$129', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Faux Leather Jacket', brand: 'Amazon', price: '$85', url: 'https://amzn.to/4anggFT', tag: 'Trend Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Rich Brown Leather Blazer', brand: 'Amazon', price: '$189', url: 'https://amzn.to/40drBCf', tag: 'Dress Up Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Vegan Leather Jacket', brand: 'Amazon', price: '$70', url: 'https://amzn.to/3OrVpsf', tag: 'Budget Friendly', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Distressed Black Leather Jacket', brand: 'Amazon', price: '$150', url: 'https://amzn.to/4tH7kT9', tag: 'Edgy Vibe', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
