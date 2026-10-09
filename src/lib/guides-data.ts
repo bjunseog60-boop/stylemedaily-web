@@ -1128,6 +1128,24 @@ export const guides: StyleGuide[] = [
       { name: 'Distressed Black Leather Jacket', brand: 'Amazon', price: '$150', url: 'https://amzn.to/4tH7kT9', tag: 'Edgy Vibe', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-linen-effortlessly-2026',
+    title: 'How to Style Linen Effortlessly: Your Go-To Guide for Cool & Chic Outfits 2026',
+    category: 'seasonal',
+    description: 'Unlock the secrets to chic linen fashion! This guide shows you how to style linen shirts, pants, and dresses for cool, comfy outfits all season long. Get tips on embracing wrinkles, accessorizing, and making linen work for any occasion. Find your next favorite outfit!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: '🌿',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Linen Button-Up Shirt', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4rVjOFg', tag: 'Everyday Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Wide-Leg Linen Trousers', brand: 'Amazon', price: '$78', url: 'https://amzn.to/3ZCaw4S', tag: 'Comfy & Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Midi Linen Sundress', brand: 'Amazon', price: '$89', url: 'https://amzn.to/3Mro3JB', tag: 'Vacation Ready', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Blend Jumpsuit', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3OhrhzW', tag: 'One-and-Done Outfit', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Linen Blend Blazer', brand: 'Amazon', price: '$110', url: 'https://amzn.to/4anggFT', tag: 'Light Layer', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
