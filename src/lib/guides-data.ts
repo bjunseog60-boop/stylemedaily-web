@@ -1146,6 +1146,24 @@ export const guides: StyleGuide[] = [
       { name: 'Linen Blend Blazer', brand: 'Amazon', price: '$110', url: 'https://amzn.to/4anggFT', tag: 'Light Layer', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'mastering-linen-style-for-summer-2026',
+    title: 'Your Ultimate Guide to Chic Linen Outfits This Summer 2026',
+    category: 'seasonal',
+    description: 'Discover how to style linen clothes for summer 2026! From breezy pants to chic dresses, get easy tips to look effortlessly cool and comfy in linen.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Seasonal',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Linen Blend Wide-Leg Pants', brand: 'Amazon', price: '$60', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Linen Button-Down Shirt', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3ZCaw4S', tag: 'Everyday Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tiered Linen Midi Dress', brand: 'Amazon', price: '$80', url: 'https://amzn.to/3Mro3JB', tag: 'Effortless Style', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Espadrille Wedge Sandals', brand: 'Amazon', price: '$75', url: 'https://amzn.to/3OhrhzW', tag: 'Perfect Pair', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Straw Beach Tote Bag', brand: 'Amazon', price: '$50', url: 'https://amzn.to/4anggFT', tag: 'Accessory Pick', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
