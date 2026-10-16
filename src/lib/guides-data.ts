@@ -1164,6 +1164,24 @@ export const guides: StyleGuide[] = [
       { name: 'Straw Beach Tote Bag', brand: 'Amazon', price: '$50', url: 'https://amzn.to/4anggFT', tag: 'Accessory Pick', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-a-leather-jacket-ultimate-guide-2026',
+    title: 'Your BFF\'s Guide to Styling a Leather Jacket: From Casual Cool to Date Night Chic -- 2026',
+    category: 'casual',
+    description: 'Master your leather jacket! Get fresh outfit ideas for any occasion -- casual, work, or date night. Your ultimate style guide for 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Moto Jacket', brand: 'Amazon', price: '$129', url: 'https://amzn.to/3Mro3JB', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored Vegan Leather Blazer', brand: 'Amazon', price: '$98', url: 'https://amzn.to/4rfVnSQ', tag: 'Workwear Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Distressed Brown Biker Jacket', brand: 'Amazon', price: '$145', url: 'https://amzn.to/4kNVNxy', tag: 'Boho Vibes', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Faux Leather Jacket', brand: 'Amazon', price: '$75', url: 'https://amzn.to/3OrVpsf', tag: 'Date Night Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Longline Faux Leather Trench', brand: 'Amazon', price: '$180', url: 'https://amzn.to/4tH7kT9', tag: 'Statement Piece', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
