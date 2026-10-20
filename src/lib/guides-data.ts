@@ -1182,6 +1182,24 @@ export const guides: StyleGuide[] = [
       { name: 'Longline Faux Leather Trench', brand: 'Amazon', price: '$180', url: 'https://amzn.to/4tH7kT9', tag: 'Statement Piece', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'rock-your-linen-looks-effortlessly-2026',
+    title: 'Rock Your Linen Looks Effortlessly: The Ultimate Guide to Breezy Style 2026',
+    category: 'seasonal',
+    description: 'Discover how to style linen clothes for any occasion in 2026! Get breezy, chic outfit ideas and practical tips to look amazing and stay comfy. Your best friend\'s guide!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '🌿',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Relaxed Fit Linen Blend Trousers', brand: 'Amazon', price: '$59', url: 'https://amzn.to/4rVjOFg', tag: 'Best Everyday Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Pure Linen Button-Down Shirt', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW', tag: 'Versatile Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'A-Line Linen Midi Dress', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4tH7kT9', tag: 'Effortless Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Structured Linen Blend Blazer', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3Mro7cj', tag: 'Smart Casual Hero', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Straw and Linen Crossbody Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4rUPDhk', tag: 'Perfect Accessory', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
