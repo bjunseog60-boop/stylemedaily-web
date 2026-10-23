@@ -1200,6 +1200,24 @@ export const guides: StyleGuide[] = [
       { name: 'Straw and Linen Crossbody Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4rUPDhk', tag: 'Perfect Accessory', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'denim-jacket-outfits-ultimate-style-guide-2026',
+    title: 'Your Ultimate Guide to Styling Denim Jackets -- Rock Every Look! 2026',
+    category: 'casual',
+    description: 'Level up your denim jacket game! Discover fresh, easy outfit ideas for every occasion. Your go-to guide for styling this classic piece like a fashion pro. 2026',
+    readTime: '10 min',
+    date: '2026-03-10',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Blue Wash Denim Jacket', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Black Denim Jacket', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4rfVnSQ', tag: 'Edgy Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'White Distressed Denim Jacket', brand: 'Amazon', price: '$59', url: 'https://amzn.to/4kNVNxy', tag: 'Summer Vibe', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Dark Wash Fitted Denim Jacket', brand: 'Amazon', price: '$72', url: 'https://amzn.to/4rUPDhk', tag: 'Polished Choice', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Embroidered Back Denim Jacket', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4tH7kT9', tag: 'Statement Piece', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
