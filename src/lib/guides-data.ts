@@ -1218,6 +1218,24 @@ export const guides: StyleGuide[] = [
       { name: 'Embroidered Back Denim Jacket', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4tH7kT9', tag: 'Statement Piece', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'work-from-home-style-guide-comfy-chic-2026',
+    title: 'Your Ultimate Guide to Work From Home Style: Comfy & Chic Outfits That Keep You Feeling Great 2026',
+    category: 'casual',
+    description: 'Master WFH style! Discover comfy, chic outfits for your home office that keep you productive & polished for video calls. No sweatsuits required! 2026.',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Cozy Knit Long Cardigan', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waisted Wide Leg Lounge Pants', brand: 'Amazon', price: '$48', url: 'https://amzn.to/3ZCaw4S', tag: 'Comfy Bottoms', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Soft Ribbed Crewneck Tee', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3Mro3JB', tag: 'Essential Basic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chic Faux Leather Loafer Slides', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OhrhzW', tag: 'Footwear Favorite', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Stylish Blue Light Blocking Glasses', brand: 'Amazon', price: '$32', url: 'https://amzn.to/4anggFT', tag: 'WFH Must-Have', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
