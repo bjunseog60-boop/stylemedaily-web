@@ -1236,6 +1236,24 @@ export const guides: StyleGuide[] = [
       { name: 'Stylish Blue Light Blocking Glasses', brand: 'Amazon', price: '$32', url: 'https://amzn.to/4anggFT', tag: 'WFH Must-Have', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'your-ultimate-maxi-dress-styling-guide-2026',
+    title: 'Your Ultimate Maxi Dress Styling Guide: How to Rock It Anywhere (2026)',
+    category: 'occasion',
+    description: 'Unlock your maxi dress potential! Learn to style this versatile fave for casual days, date nights, and even work. Your go-to guide for effortless chic outfits (2026).',
+    readTime: '10 min',
+    date: '2026-03-10',
+    tag: 'Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Everyday Flowy T-Shirt Maxi Dress', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4rVjOFg', tag: 'Casual Vibe', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Silky Slip Maxi Dress', brand: 'Amazon', price: '$78', url: 'https://amzn.to/3ZCaw4S', tag: 'Date Night Glam', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic Light Wash Denim Jacket', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3Mro3JB', tag: 'Layering Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Comfy Espadrille Wedge Sandals', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3OhrhzW', tag: 'Versatile Footwear', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Wide Cinch Belt with Buckle', brand: 'Amazon', price: '$30', url: 'https://amzn.to/4anggFT', tag: 'Shape Shifter', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
