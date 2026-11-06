@@ -1254,6 +1254,24 @@ export const guides: StyleGuide[] = [
       { name: 'Wide Cinch Belt with Buckle', brand: 'Amazon', price: '$30', url: 'https://amzn.to/4anggFT', tag: 'Shape Shifter', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-midi-skirts-for-any-occasion-2026',
+    title: 'How To Style Midi Skirts for Any Occasion: Your Ultimate Guide 2026',
+    category: 'casual',
+    description: 'Unlock the power of the midi skirt! Your bestie guide to styling this versatile piece for casual days, work, or date night. Midi skirt outfits for every body, every season.',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: '✨',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Flowy A-Line Midi Skirt', brand: 'Amazon', price: '$45', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Satin Slip Midi Skirt', brand: 'Amazon', price: '$60', url: 'https://amzn.to/3Mro3JB', tag: 'Elevated Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Denim Button-Front Midi Skirt', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4anggFT', tag: 'Casual Favorite', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Pleated Chiffon Midi Skirt', brand: 'Amazon', price: '$70', url: 'https://amzn.to/4tH7kT9', tag: 'Work & Play', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Soft Cotton Basic Tee', brand: 'Amazon', price: '$25', url: 'https://amzn.to/4kNVNxy', tag: 'Styling Essential', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
