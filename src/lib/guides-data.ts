@@ -1272,6 +1272,24 @@ export const guides: StyleGuide[] = [
       { name: 'Soft Cotton Basic Tee', brand: 'Amazon', price: '$25', url: 'https://amzn.to/4kNVNxy', tag: 'Styling Essential', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'work-from-home-chic-outfits-guide-2026',
+    title: 'Your Ultimate Guide to Work From Home Outfits: Comfy & Chic Style 2026',
+    category: 'casual',
+    description: 'Master WFH style! Get comfy, look polished. This guide has all the tips for stylish work from home outfits that feel like PJs.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '🏠✨',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Soft Knit Lounge Set', brand: 'Amazon', price: '$68', url: 'https://amzn.to/3OhrhzW', tag: 'Best Overall Comfort', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tailored High-Waist Joggers', brand: 'Amazon', price: '$55', url: 'https://amzn.to/40drBCf', tag: 'Elevated Everyday', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cozy Oversized Cardigan', brand: 'Amazon', price: '$42', url: 'https://amzn.to/3ZCaw4S', tag: 'Perfect Layering Piece', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Ribbed Knit Maxi Dress', brand: 'Amazon', price: '$70', url: 'https://amzn.to/3Mro7cj', tag: 'Effortless Zoom Ready', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Versatile Basic Tee (3-Pack)', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3OrVpsf', tag: 'WFH Essential', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
