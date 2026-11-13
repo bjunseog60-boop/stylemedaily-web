@@ -1290,6 +1290,24 @@ export const guides: StyleGuide[] = [
       { name: 'Versatile Basic Tee (3-Pack)', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3OrVpsf', tag: 'WFH Essential', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'rock-your-leather-jacket-ultimate-style-guide-2026',
+    title: 'Rock Your Leather Jacket: The Ultimate Style Guide for Every Occasion 2026',
+    category: 'casual',
+    description: 'Your leather jacket is a wardrobe MVP! Learn how to style it for casual cool, date nights, and even the office. Timeless outfits made easy. #leatherjacket',
+    readTime: '8 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$129', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Soft Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/3ZCaw4S', tag: 'Office Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Vegan Leather Jacket', brand: 'Amazon', price: '$95', url: 'https://amzn.to/3Mro3JB', tag: 'Trend Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Distressed Brown Aviator Jacket', brand: 'Amazon', price: '$145', url: 'https://amzn.to/3OhrhzW', tag: 'Vintage Vibe', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'High-Waist Faux Leather Leggings', brand: 'Amazon', price: '$60', url: 'https://amzn.to/4anggFT', tag: 'Perfect Pair', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
