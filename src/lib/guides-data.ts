@@ -1308,6 +1308,24 @@ export const guides: StyleGuide[] = [
       { name: 'High-Waist Faux Leather Leggings', brand: 'Amazon', price: '$60', url: 'https://amzn.to/4anggFT', tag: 'Perfect Pair', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'how-to-style-white-jeans-year-round-2026',
+    title: 'Your Ultimate Guide: How to Style White Jeans for Every Season 2026',
+    category: 'casual',
+    description: 'White jeans are not just for summer! Discover how to rock white denim all year long with these easy styling tips. Get ready to elevate your casual looks!',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Style Tips',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'High-Waisted White Straight Leg Jeans', brand: 'Amazon', price: '$89', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Classic White Skinny Jeans', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3OhrhzW', tag: 'Wardrobe Staple', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Chunky Cream Knit Sweater', brand: 'Amazon', price: '$58', url: 'https://amzn.to/4tH7kT9', tag: 'Winter Essential', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Tan Leather Mules', brand: 'Amazon', price: '$120', url: 'https://amzn.to/3Mro7cj', tag: 'Versatile Shoe', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Striped Cotton Tee', brand: 'Amazon', price: '$30', url: 'https://amzn.to/4rUPDhk', tag: 'Everyday Basic', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
