@@ -1326,6 +1326,24 @@ export const guides: StyleGuide[] = [
       { name: 'Striped Cotton Tee', brand: 'Amazon', price: '$30', url: 'https://amzn.to/4rUPDhk', tag: 'Everyday Basic', image: 'https://placehold.co/600x400?text=Image' },
     ],
   },
+  {
+    slug: 'your-ultimate-leather-jacket-style-guide-2026',
+    title: 'Your Ultimate Leather Jacket Style Guide: Rock It for Every Occasion 2026',
+    category: 'occasion',
+    description: 'Unlock your leather jacket\'s full potential! Learn how to style this closet hero for casual days, date nights, and even the office. Your go-to guide for 2026.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'Pillar Guide',
+    emoji: 'icon',
+    image: 'https://placehold.co/600x400?text=Image',
+    affiliateProducts: [
+      { name: 'Classic Black Moto Jacket', brand: 'Amazon', price: '$129', url: 'https://amzn.to/3OhrhzW', tag: 'Best Overall', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Faux Leather Blazer', brand: 'Amazon', price: '$85', url: 'https://amzn.to/40drBCf', tag: 'Office Chic', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Oversized Brown Leather Jacket', brand: 'Amazon', price: '$160', url: 'https://amzn.to/3ZCaw4S', tag: 'Casual Cool', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Cropped Vegan Leather Jacket', brand: 'Amazon', price: '$98', url: 'https://amzn.to/3OrVpsf', tag: 'Date Night Pick', image: 'https://placehold.co/600x400?text=Image' },
+      { name: 'Quilted Leather Bomber Jacket', brand: 'Amazon', price: '$180', url: 'https://amzn.to/4tH7kT9', tag: 'Edgy Statement', image: 'https://placehold.co/600x400?text=Image' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
